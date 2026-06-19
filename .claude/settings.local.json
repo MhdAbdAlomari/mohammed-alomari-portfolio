@@ -10,7 +10,8 @@
       "Bash(head -n 407 /e/portfolio/components/data.ts)",
       "Bash(mv /tmp/data.ts /e/portfolio/components/data.ts)",
       "Bash(node -e ' *)",
-      "Bash(grep -n \"^  // ─\\\\|^  {\\\\$\\\\|^  },\" components/data.ts)"
+      "Bash(grep -n \"^  // ─\\\\|^  {\\\\$\\\\|^  },\" components/data.ts)",
+      "Bash(npm run *)"
     ]
   }
 }
