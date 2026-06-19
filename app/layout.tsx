@@ -25,7 +25,7 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-const SITE_TITLE = "Mohammed Abdulrahman Alomari — Flutter Engineer";
+const SITE_TITLE = "Mohammed Alomari — Flutter Engineer";
 const SITE_DESCRIPTION =
   "Flutter Engineer shipping production mobile apps. Creator of Ashafaq Car Wash, live in Saudi Arabia with 8,000+ active users and 3,000+ completed orders. Clean Architecture, Bloc, Firebase, Stripe.";
 
@@ -33,10 +33,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: SITE_TITLE,
-    template: "%s · Mohammed Abdulrahman Alomari",
+    template: "%s · Mohammed Alomari",
   },
   description: SITE_DESCRIPTION,
-  applicationName: "Mohammed Abdulrahman Alomari — Portfolio",
+  applicationName: "Mohammed Alomari — Portfolio",
   keywords: [
     "Flutter Developer",
     "Flutter Engineer",
@@ -65,12 +65,12 @@ export const metadata: Metadata = {
     "Smart maintenance app",
     "Wassi food delivery",
     "Doctor appointment app",
-    "Mohammed Abdulrahman Alomari",
+    "Mohammed Alomari",
     "Mohammed Abdulrhman Alomari",
   ],
-  authors: [{ name: "Mohammed Abdulrahman Alomari", url: SITE_URL }],
-  creator: "Mohammed Abdulrahman Alomari",
-  publisher: "Mohammed Abdulrahman Alomari",
+  authors: [{ name: "Mohammed Abdulrhman Alomari", url: SITE_URL }],
+  creator: "Mohammed Abdulrhman Alomari",
+  publisher: "Mohammed Abdulrhman Alomari",
   category: "Technology",
   robots: {
     index: true,
@@ -87,7 +87,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: SITE_URL,
-    siteName: "Mohammed Abdulrahman Alomari",
+    siteName: "Mohammed Alomari",
     title: SITE_TITLE,
     description:
       "Production Flutter apps with 8,000+ users. Clean Architecture, Bloc, Firebase, Stripe. Live in Saudi Arabia.",
@@ -96,7 +96,7 @@ export const metadata: Metadata = {
         url: "/images/projects/ashafaq/ashafaq_home.jpg",
         width: 1200,
         height: 630,
-        alt: "Ashafaq Car Wash — Mohammed Abdulrahman Alomari's featured Flutter project",
+        alt: "Ashafaq Car Wash — Mohammed Alomari's featured Flutter project",
       },
     ],
   },
@@ -118,8 +118,8 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Mohammed Abdulrahman Alomari",
-  alternateName: "Mohammed Abdulrhman Alomari",
+  name: "Mohammed Abdulrhman Alomari",
+  alternateName: "Mohammed Alomari",
   jobTitle: "Flutter Engineer",
   description:
     "Flutter Engineer building production mobile applications. Creator of Ashafaq Car Wash — 8,000+ active users in Saudi Arabia.",

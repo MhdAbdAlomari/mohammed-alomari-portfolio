@@ -69,7 +69,7 @@ const en: Dict = {
   hero: {
     badge: "Available for new opportunities",
     nameLine1: "Mohammed",
-    nameLine2: "Abdulrahman Alomari.",
+    nameLine2: "Alomari.",
     subtitle: {
       lead: "Flutter Engineer crafting production mobile apps with",
       arch: "Clean Architecture",
@@ -131,7 +131,7 @@ const ar: Dict = {
   nav: { about: "نبذة", experience: "الخبرة", projects: "المشاريع", skills: "المهارات", writing: "المقالات", contact: "تواصل", cta: "لنتحدث" },
   hero: {
     badge: "متاح لفرص جديدة",
-    nameLine1: "محمد عبد الرحمن",
+    nameLine1: "محمد",
     nameLine2: "العمري.",
     subtitle: {
       lead: "مهندس Flutter يبني تطبيقات إنتاجية باستخدام",
