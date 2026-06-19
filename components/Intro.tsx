@@ -65,7 +65,7 @@ export function Intro() {
                 transition={{ delay: 0.4, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
                 className="text-balance text-3xl font-semibold tracking-tight gradient-text sm:text-4xl"
               >
-                Mohammed Alomari
+                Mohammed Abdulrhman Alomari
               </motion.h1>
             </div>
 

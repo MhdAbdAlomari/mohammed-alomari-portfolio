@@ -29,13 +29,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title,
     description: descriptionEn,
     keywords: project.keywords,
-    authors: [{ name: "Mohammed Abdulrhman Alomari" }],
+    authors: [{ name: "Mohammed Abdulrahman Alomari" }],
     openGraph: {
       title,
       description: descriptionEn,
       type: "article",
       url,
-      siteName: "Mohammed Alomari",
+      siteName: "Mohammed Abdulrahman Alomari",
       ...(ogImage && {
         images: [
           {

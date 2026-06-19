@@ -15,10 +15,10 @@ export const metadata: Metadata = {
     "Bloc state management",
     "Production Flutter",
     "Flutter engineering notes",
-    "Mohammed Alomari",
+    "Mohammed Abdulrahman Alomari",
   ],
   openGraph: {
-    title: "Writing — Mohammed Alomari",
+    title: "Writing — Mohammed Abdulrahman Alomari",
     description:
       "Notes on Flutter, Clean Architecture, Bloc, and shipping production mobile apps.",
     type: "website",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Writing — Mohammed Alomari",
+    title: "Writing — Mohammed Abdulrahman Alomari",
     description: "Notes from a working Flutter engineer.",
   },
   alternates: { canonical: "/blog" },
