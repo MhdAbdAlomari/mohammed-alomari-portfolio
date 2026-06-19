@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm view *)",
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(node -e \"const x=require\\('lucide-react'\\); console.log\\(Object.keys\\(x\\).filter\\(k=>/github|linkedin/i.test\\(k\\)\\)\\)\")",
+      "Bash(node -e \"const x=require\\('lucide-react'\\); console.log\\(Object.keys\\(x\\).filter\\(k=>/git|brand|in$/i.test\\(k\\)\\).slice\\(0,30\\)\\)\")",
+      "Bash(npx next *)",
+      "Bash(head -n 407 /e/portfolio/components/data.ts)",
+      "Bash(mv /tmp/data.ts /e/portfolio/components/data.ts)",
+      "Bash(node -e ' *)",
+      "Bash(grep -n \"^  // ─\\\\|^  {\\\\$\\\\|^  },\" components/data.ts)"
+    ]
+  }
+}

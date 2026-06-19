@@ -1,0 +1,21 @@
+---
+title: Scaling production Flutter apps
+excerpt: "From 0 to 8,000+ active users on Ashafaq: what broke first, what saved us, and what I'd build in from day one next time."
+category: Production
+readingTime: 12 min read
+date: 2025-01-20
+---
+
+## What broke first
+
+It wasn't performance — it was state. Specifically, edge cases in the order lifecycle that only appeared with real users doing unexpected things. Bloc helped us reproduce them; explicit state machines made them fixable.
+
+## What saved us
+
+Crashlytics, structured logging, and the discipline of treating every customer-reported issue as a missing test case.
+
+## What I'd build in from day one
+
+Feature flags. Even a simple boolean toggle, controlled remotely, would have saved a few stressful afternoons rolling things forward.
+
+Stronger telemetry around the booking funnel — knowing where users drop off is what makes product decisions cheap.

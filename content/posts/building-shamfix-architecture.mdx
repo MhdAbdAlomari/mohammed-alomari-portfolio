@@ -1,0 +1,21 @@
+---
+title: Building ShamFix Architecture
+excerpt: How I structured a two-sided maintenance marketplace in Flutter — Clean Architecture, Bloc, and a single codebase serving two very different users.
+category: Architecture
+readingTime: 8 min read
+date: 2024-09-12
+---
+
+## Why two-sided is hard in one app
+
+ShamFix has two completely different user journeys living in one binary: customers post requests, technicians fulfill them. The temptation is to fork the codebase or build two apps. I didn't — and here's why that mostly paid off.
+
+The domain — request, offer, accepted job, completion — is shared. Forking would have meant maintaining the same business rules in two places. Instead I kept a single domain layer and split presentation by role.
+
+## Bloc per feature, role per route
+
+Each major flow (auth, request, offers, chat) has its own Bloc. Roles aren't part of state — they gate routes. That keeps Blocs reusable: the same `OffersBloc` works whether you're the customer reviewing offers or the technician posting them.
+
+## What I'd do differently
+
+I'd put a feature flag layer in earlier. Some features only made sense for one side, and threading them through the shared layers was more friction than it needed to be.

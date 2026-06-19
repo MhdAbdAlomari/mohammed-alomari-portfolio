@@ -1,0 +1,21 @@
+---
+title: Flutter Clean Architecture in real apps
+excerpt: Clean Architecture sounds great in slides. Here's what it actually costs and what it actually buys you when you ship a real Flutter product.
+category: Engineering
+readingTime: 10 min read
+date: 2024-11-03
+---
+
+## The cost is real
+
+Three layers, repositories, mappers, use-cases. On day one of Ashafaq, this felt like overhead. On day ninety, when payments changed providers, it felt like the smartest thing I'd done.
+
+## Where it pays off
+
+Anywhere external systems can change: payments, notifications, persistence. The interface boundary means swapping the implementation doesn't touch your UI.
+
+Testing is the other big win. Use-cases are pure functions over the domain; they don't care about Flutter at all.
+
+## Where I bend the rules
+
+Trivial features don't need three layers. I keep the layered approach for anything touching external systems, and let small UI-only features be small.
