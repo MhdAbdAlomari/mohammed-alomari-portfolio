@@ -79,7 +79,7 @@ const en: Dict = {
       tail: "— a live product serving 8,000+ users across Saudi Arabia.",
     },
     location: "Syria · Remote",
-    yearsTag: "1+ year shipping production Flutter",
+    yearsTag: "2+ year shipping production Flutter",
     cta: { projects: "View Projects", cv: "Download CV", contact: "Contact Me" },
     stats: { users: "Active users", orders: "Orders processed", apps: "Production apps" },
   },

@@ -70,7 +70,7 @@ const APPS_SHIPPED = { en: "Apps shipped", ar: "تطبيقات مُنجزة" };
 const VAL_EN_AR = (en: string, ar: string): LS => ({ en, ar });
 
 // ────────────────────────────────────────────────────────────────────────
-export const projects: Project[] = [
+const projectsRaw: Project[] = [
   // ────────────────────────────────────────────────────────────────────────
   // 1. ASHAFAQ — featured production product
   // ────────────────────────────────────────────────────────────────────────
@@ -1112,6 +1112,22 @@ export const projects: Project[] = [
     },
   },
 ];
+
+// Canonical display order across the home page, listings, and case-study navigation.
+export const PROJECT_ORDER: readonly string[] = [
+  "ashafaq-car-wash",
+  "shamfix",
+  "food-delivery",
+  "ashafaq-worker",
+  "ashafaq-branch",
+  "doctor-appointment",
+];
+
+export const projects: Project[] = [...projectsRaw].sort((a, b) => {
+  const ai = PROJECT_ORDER.indexOf(a.slug);
+  const bi = PROJECT_ORDER.indexOf(b.slug);
+  return (ai === -1 ? Number.MAX_SAFE_INTEGER : ai) - (bi === -1 ? Number.MAX_SAFE_INTEGER : bi);
+});
 
 export function getProject(slug: string): Project | undefined {
   return projects.find((p) => p.slug === slug);
