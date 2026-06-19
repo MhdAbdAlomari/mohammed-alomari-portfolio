@@ -44,8 +44,8 @@ type Dict = {
   experience: { eyebrow: string; title: string; subtitle: string };
   projects: { eyebrow: string; title: string; subtitle: string; featured: string; viewCaseStudy: string; viewCaseStudyShort: string };
   skills: { eyebrow: string; title: string; subtitle: string };
-  blog: { eyebrow: string; title: string; subtitle: string; viewAll: string; readArticle: string };
-  contact: { eyebrow: string; title: string; subtitle: string; name: string; email: string; message: string; send: string; sending: string; successTitle: string; successBody: string; errorTitle: string; errorBody: string; sendAnother: string; placeholders: { name: string; email: string; message: string } };
+  blog: { eyebrow: string; title: string; subtitle: string; viewAll: string; readArticle: string; backHome: string; allArticles: string; indexHeroTitle: string; indexHeroSubtitle: string };
+  contact: { eyebrow: string; title: string; subtitle: string; name: string; email: string; message: string; send: string; sending: string; successTitle: string; successBody: string; errorTitle: string; errorBody: string; sendAnother: string; channels: { email: string; linkedin: string; github: string }; placeholders: { name: string; email: string; message: string } };
   footer: { built: string };
   intro: { skip: string; tagline: string };
   audio: { mute: string; unmute: string };
@@ -97,7 +97,7 @@ const en: Dict = {
   experience: { eyebrow: "Experience", title: "Where I've shipped.", subtitle: "A focused track record on Flutter products that reached real users in production." },
   projects: { eyebrow: "Selected work", title: "Production apps. Real users.", subtitle: "A snapshot of products I've designed, built, and shipped — from solo work to international team projects.", featured: "Featured", viewCaseStudy: "View Case Study", viewCaseStudyShort: "View case study" },
   skills: { eyebrow: "Toolbox", title: "Tech I reach for daily.", subtitle: "Tools and patterns I've used in shipped products — not just tutorials." },
-  blog: { eyebrow: "Writing", title: "Notes from the field.", subtitle: "Short, honest notes on what I learned shipping production Flutter.", viewAll: "View all articles", readArticle: "Read article" },
+  blog: { eyebrow: "Writing", title: "Notes from the field.", subtitle: "Short, honest notes on what I learned shipping production Flutter.", viewAll: "View all articles", readArticle: "Read article", backHome: "Back home", allArticles: "All articles", indexHeroTitle: "Notes from the field.", indexHeroSubtitle: "Short, honest notes on Flutter, Clean Architecture, and shipping production mobile products." },
   contact: {
     eyebrow: "Contact", title: "Let's build something.", subtitle: "Open to remote Flutter / mobile engineering roles and freelance product work.",
     name: "Name", email: "Email", message: "Message", send: "Send message", sending: "Sending…",
@@ -106,6 +106,7 @@ const en: Dict = {
     errorTitle: "Something went wrong.",
     errorBody: "Couldn't send your message. Please try again, or email me directly.",
     sendAnother: "Send another",
+    channels: { email: "Email", linkedin: "LinkedIn", github: "GitHub" },
     placeholders: { name: "Your name", email: "you@company.com", message: "Tell me about your project…" },
   },
   footer: { built: "Designed & built with Next.js, Tailwind, and Framer Motion." },
@@ -159,7 +160,7 @@ const ar: Dict = {
   experience: { eyebrow: "الخبرة", title: "أين أطلقت منتجاتي.", subtitle: "سجل مُركّز على منتجات Flutter وصلت لمستخدمين حقيقيين في الإنتاج." },
   projects: { eyebrow: "أعمال مختارة", title: "تطبيقات حقيقية. مستخدمون حقيقيون.", subtitle: "نظرة على منتجات صمّمتها، بنيتها، وأطلقتها — من العمل الفردي إلى المشاريع الجماعية الدولية.", featured: "مميّز", viewCaseStudy: "عرض دراسة الحالة", viewCaseStudyShort: "عرض دراسة الحالة" },
   skills: { eyebrow: "الأدوات", title: "تقنياتي اليومية.", subtitle: "أدوات وأنماط استخدمتها في منتجات مُطلقة — لا مجرد دروس." },
-  blog: { eyebrow: "مقالات", title: "ملاحظات من الميدان.", subtitle: "ملاحظات قصيرة وصادقة عمّا تعلّمته من بناء تطبيقات Flutter إنتاجية.", viewAll: "كل المقالات", readArticle: "اقرأ المقال" },
+  blog: { eyebrow: "مقالات", title: "ملاحظات من الميدان.", subtitle: "ملاحظات قصيرة وصادقة عمّا تعلّمته من بناء تطبيقات Flutter إنتاجية.", viewAll: "كل المقالات", readArticle: "اقرأ المقال", backHome: "العودة إلى الرئيسية", allArticles: "كل المقالات", indexHeroTitle: "ملاحظات من الميدان.", indexHeroSubtitle: "ملاحظات قصيرة وصادقة حول Flutter وClean Architecture وإطلاق منتجات الموبايل في الإنتاج." },
   contact: {
     eyebrow: "تواصل", title: "لنبنِ شيئاً معاً.", subtitle: "متاح لفرص هندسة Flutter / موبايل عن بُعد وعمل حر على المنتجات.",
     name: "الاسم", email: "البريد الإلكتروني", message: "الرسالة", send: "إرسال الرسالة", sending: "جارٍ الإرسال…",
@@ -168,6 +169,7 @@ const ar: Dict = {
     errorTitle: "حدث خطأ ما.",
     errorBody: "تعذّر إرسال رسالتك. حاول مرّة أخرى، أو راسلني مباشرةً عبر البريد.",
     sendAnother: "إرسال رسالة أخرى",
+    channels: { email: "البريد الإلكتروني", linkedin: "لينكدإن", github: "غيت هاب" },
     placeholders: { name: "اسمك", email: "you@company.com", message: "أخبرني عن مشروعك…" },
   },
   footer: { built: "صُمم وبُني باستخدام Next.js وTailwind وFramer Motion." },

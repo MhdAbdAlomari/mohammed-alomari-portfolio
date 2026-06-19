@@ -33,4 +33,8 @@ export const container = (stagger = 0.08, delay = 0): Variants => ({
   },
 });
 
-export const viewportOnce = { once: true, amount: 0.2 } as const;
+export const viewportOnce = {
+  once: true,
+  amount: 0.05,
+  margin: "0px 0px -10% 0px",
+} as const;

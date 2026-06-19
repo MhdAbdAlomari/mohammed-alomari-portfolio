@@ -7,9 +7,10 @@ import type { PostMeta } from "@/lib/cms";
 import { Section } from "./ui/Section";
 import { container, fadeUp, viewportOnce } from "./motion";
 import { useLocale } from "./i18n/LocaleProvider";
+import { l } from "@/lib/i18n";
 
 export function Blog({ posts }: { posts: PostMeta[] }) {
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
   return (
     <Section id="blog" eyebrow={t.blog.eyebrow} title={t.blog.title} subtitle={t.blog.subtitle}>
       <motion.div
@@ -34,17 +35,17 @@ export function Blog({ posts }: { posts: PostMeta[] }) {
               <div className="relative flex flex-1 flex-col">
                 <div className="flex items-center justify-between text-xs">
                   <span className="rounded-full border border-white/10 bg-white/[0.03] px-2.5 py-0.5 font-medium text-accent">
-                    {post.category}
+                    {l(post.category, locale)}
                   </span>
                   <span className="inline-flex items-center gap-1 text-muted-soft">
                     <Clock size={11} />
-                    {post.readingTime}
+                    {l(post.readingTime, locale)}
                   </span>
                 </div>
                 <h3 className="mt-5 text-balance text-lg font-semibold tracking-tight text-white transition-colors group-hover:text-accent">
-                  {post.title}
+                  {l(post.title, locale)}
                 </h3>
-                <p className="mt-3 line-clamp-3 flex-1 text-sm leading-relaxed text-muted">{post.excerpt}</p>
+                <p className="mt-3 line-clamp-3 flex-1 text-sm leading-relaxed text-muted">{l(post.excerpt, locale)}</p>
                 <div className="mt-5 inline-flex items-center gap-1.5 text-xs font-medium text-accent">
                   {t.blog.readArticle}
                   <ArrowUpRight size={12} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

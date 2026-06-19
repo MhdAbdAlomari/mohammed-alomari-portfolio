@@ -22,29 +22,29 @@ const LinkedinIcon: ComponentType<SVGProps<SVGSVGElement>> = (props) => (
 const RECIPIENT = "mohamed.alomari.dev@gmail.com";
 const FORM_ENDPOINT = `https://formsubmit.co/${RECIPIENT}`;
 
-const channels = [
-  {
-    icon: Mail,
-    label: "Email",
-    value: RECIPIENT,
-    href: `mailto:${RECIPIENT}`,
-  },
-  {
-    icon: LinkedinIcon,
-    label: "LinkedIn",
-    value: "in/m-alomari",
-    href: "https://www.linkedin.com/",
-  },
-  {
-    icon: GithubIcon,
-    label: "GitHub",
-    value: "M-Abdulrhman-Alomari",
-    href: "https://github.com/M-Abdulrhman-Alomari",
-  },
-];
-
 export function Contact() {
   const { t } = useLocale();
+
+  const channels = [
+    {
+      icon: Mail,
+      label: t.contact.channels.email,
+      value: RECIPIENT,
+      href: `mailto:${RECIPIENT}`,
+    },
+    {
+      icon: LinkedinIcon,
+      label: t.contact.channels.linkedin,
+      value: "in/m-alomari",
+      href: "https://www.linkedin.com/",
+    },
+    {
+      icon: GithubIcon,
+      label: t.contact.channels.github,
+      value: "M-Abdulrhman-Alomari",
+      href: "https://github.com/M-Abdulrhman-Alomari",
+    },
+  ];
 
   return (
     <Section id="contact" eyebrow={t.contact.eyebrow} title={t.contact.title} subtitle={t.contact.subtitle}>

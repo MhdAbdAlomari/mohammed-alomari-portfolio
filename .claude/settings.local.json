@@ -11,7 +11,8 @@
       "Bash(mv /tmp/data.ts /e/portfolio/components/data.ts)",
       "Bash(node -e ' *)",
       "Bash(grep -n \"^  // ─\\\\|^  {\\\\$\\\\|^  },\" components/data.ts)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(xargs grep -l \"ViewportOptions\\\\|amount.*number\")"
     ]
   }
 }
