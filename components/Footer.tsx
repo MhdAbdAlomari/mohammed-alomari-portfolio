@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useLocale } from "./i18n/LocaleProvider";
 
@@ -11,7 +11,7 @@ export function Footer() {
           <span className="grid size-7 place-items-center rounded-md bg-gradient-to-br from-accent to-primary text-bg">
             <span className="font-mono text-xs font-bold">A</span>
           </span>
-          <span>© {new Date().getFullYear()} Abdulrhman Alomari</span>
+          <span>© {new Date().getFullYear()} Abdulrahman Alomari</span>
         </div>
         <p className="text-center text-xs text-muted-soft sm:text-end">{t.footer.built}</p>
       </div>

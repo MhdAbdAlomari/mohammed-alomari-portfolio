@@ -35,14 +35,14 @@ export function Contact() {
     {
       icon: LinkedinIcon,
       label: t.contact.channels.linkedin,
-      value: "in/m-alomari",
-      href: "https://www.linkedin.com/",
+      value: "in/mhdalomari",
+      href: "https://linkedin.com/in/mhdalomari",
     },
     {
       icon: GithubIcon,
       label: t.contact.channels.github,
-      value: "M-Abdulrhman-Alomari",
-      href: "https://github.com/M-Abdulrhman-Alomari",
+      value: "MhdAbdAlomari",
+      href: "https://github.com/MhdAbdAlomari",
     },
   ];
 
