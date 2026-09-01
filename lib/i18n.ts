@@ -68,7 +68,7 @@ const en: Dict = {
   nav: { about: "About", experience: "Experience", projects: "Projects", skills: "Skills", writing: "Writing", contact: "Contact", cta: "Let's talk" },
   hero: {
     badge: "Available for new opportunities",
-    nameLine1: "Mohammed",
+    nameLine1: "Abdulrhman",
     nameLine2: "Alomari.",
     subtitle: {
       lead: "Flutter Engineer crafting production mobile apps with",
@@ -76,17 +76,17 @@ const en: Dict = {
       bloc: "Bloc",
       and: "and",
       product: "Ashafaq Car Wash",
-      tail: "— a live product serving 8,000+ users across Saudi Arabia.",
+      tail: "— a live product serving 14,000+ customers across Saudi Arabia.",
     },
-    location: "Syria · Remote",
-    yearsTag: "2+ year shipping production Flutter",
+    location: "Open to remote work or visa relocation",
+    yearsTag: "Production Flutter apps serving thousands of customers in Saudi Arabia",
     cta: { projects: "View Projects", cv: "Download CV", contact: "Contact Me" },
-    stats: { users: "Active users", orders: "Orders processed", apps: "Production apps" },
+    stats: { users: "Active customers", orders: "Orders processed", apps: "Production apps" },
   },
   about: {
     eyebrow: "About",
     title: "Engineer behind a product, not just code.",
-    subtitle: "I'm Mohammed — a Flutter engineer focused on shipping real apps that real people use. Over the past year I built and continue to maintain the Ashafaq Car Wash platform, deployed to the Saudi market with 8,000+ users.",
+    subtitle: "I'm Abdulrhman — a Flutter engineer focused on shipping real apps that real people use. I built and continue to maintain the Ashafaq Car Wash platform, deployed to the Saudi market and serving 14,000+ customers with 16,000+ orders processed.",
     pillars: {
       clean: { t: "Clean Architecture", b: "Separation of concerns from day one — domain, data, and presentation layers that scale with the product." },
       bloc: { t: "Bloc state management", b: "Predictable state, testable flows, and clear boundaries between business logic and UI." },
@@ -110,7 +110,7 @@ const en: Dict = {
     placeholders: { name: "Your name", email: "you@company.com", message: "Tell me about your project…" },
   },
   footer: { built: "Designed & built with Next.js, Tailwind, and Framer Motion." },
-  intro: { skip: "Skip intro", tagline: "Flutter Engineer · Syria" },
+  intro: { skip: "Skip intro", tagline: "Flutter Engineer · Open to remote & relocation" },
   audio: { mute: "Mute UI sounds", unmute: "Unmute UI sounds" },
   dashboard: { title: "Site insights", subtitle: "Lightweight analytics for this portfolio.", visitors: "Unique visitors", pageViews: "Page views", avgSession: "Avg. session", topProjects: "Top projects", topPages: "Top pages", last7Days: "Last 7 days" },
   caseStudy: {
@@ -131,7 +131,7 @@ const ar: Dict = {
   nav: { about: "نبذة", experience: "الخبرة", projects: "المشاريع", skills: "المهارات", writing: "المقالات", contact: "تواصل", cta: "لنتحدث" },
   hero: {
     badge: "متاح لفرص جديدة",
-    nameLine1: "محمد",
+    nameLine1: "عبد الرحمن",
     nameLine2: "العمري.",
     subtitle: {
       lead: "مهندس Flutter يبني تطبيقات إنتاجية باستخدام",
@@ -139,17 +139,17 @@ const ar: Dict = {
       bloc: "Bloc",
       and: "و",
       product: "تطبيق الشفق لغسيل السيارات",
-      tail: "— منتج حي يخدم أكثر من 8,000 مستخدم في المملكة العربية السعودية.",
+      tail: "— منتج حيّ يخدم أكثر من 14,000 عميل في المملكة العربية السعودية.",
     },
-    location: "سوريا · عن بُعد",
-    yearsTag: "أكثر من سنة في تطوير تطبيقات Flutter إنتاجية",
+    location: "متاح للعمل عن بُعد أو الانتقال بفيزا عمل",
+    yearsTag: "خبرة في تطوير تطبيقات إنتاجية تخدم آلاف العملاء في السعودية",
     cta: { projects: "عرض المشاريع", cv: "تحميل السيرة الذاتية", contact: "تواصل معي" },
-    stats: { users: "مستخدمون نشطون", orders: "طلبات مُنجزة", apps: "تطبيقات في الإنتاج" },
+    stats: { users: "عملاء نشطون", orders: "طلبات مُنجزة", apps: "تطبيقات في الإنتاج" },
   },
   about: {
     eyebrow: "نبذة",
     title: "مهندس وراء منتج، لا مجرد كود.",
-    subtitle: "أنا محمد — مهندس Flutter أركّز على بناء تطبيقات حقيقية يستخدمها أشخاص حقيقيون. خلال السنة الماضية بنيت وأواصل صيانة منصة الشفق لغسيل السيارات، المُطلقة في السوق السعودي بأكثر من 8,000 مستخدم.",
+    subtitle: "أنا عبد الرحمن — مهندس Flutter أركّز على بناء تطبيقات حقيقية يستخدمها أشخاص حقيقيون. بنيت وأواصل صيانة منصة الشفق لغسيل السيارات، المُطلقة في السوق السعودي بأكثر من 14,000 عميل و16,000 طلب مُعالَج.",
     pillars: {
       clean: { t: "بنية نظيفة", b: "فصل واضح للمسؤوليات من اليوم الأول — طبقات الـ domain والـ data والعرض تكبر مع المنتج." },
       bloc: { t: "إدارة الحالة عبر Bloc", b: "حالة متوقّعة، تدفقات قابلة للاختبار، وحدود واضحة بين منطق الأعمال وواجهة المستخدم." },
@@ -173,7 +173,7 @@ const ar: Dict = {
     placeholders: { name: "اسمك", email: "you@company.com", message: "أخبرني عن مشروعك…" },
   },
   footer: { built: "صُمم وبُني باستخدام Next.js وTailwind وFramer Motion." },
-  intro: { skip: "تخطّي المقدمة", tagline: "مهندس Flutter · سوريا" },
+  intro: { skip: "تخطّي المقدمة", tagline: "مهندس Flutter · متاح عن بُعد أو بفيزا عمل" },
   audio: { mute: "كتم أصوات الواجهة", unmute: "تفعيل أصوات الواجهة" },
   dashboard: { title: "إحصاءات الموقع", subtitle: "تحليلات خفيفة لهذه البورتفوليو.", visitors: "زوار فريدون", pageViews: "مشاهدات الصفحات", avgSession: "متوسط الجلسة", topProjects: "أعلى المشاريع", topPages: "أعلى الصفحات", last7Days: "آخر 7 أيام" },
   caseStudy: {
