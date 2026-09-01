@@ -1,10 +1,9 @@
-import type { LucideIcon } from "lucide-react";
+﻿import type { LucideIcon } from "lucide-react";
 import {
   Smartphone,
   Wrench,
   UtensilsCrossed,
   Stethoscope,
-  Building2,
   HardHat,
   Database,
   Cloud,
@@ -79,8 +78,8 @@ const projectsRaw: Project[] = [
     title: VAL_EN_AR("Ashafaq Car Wash", "تطبيق الشفق لغسيل السيارات"),
     tagline: VAL_EN_AR("Live production · Saudi Arabia", "في الإنتاج · المملكة العربية السعودية"),
     description: VAL_EN_AR(
-      "On-demand car wash platform live on Google Play and the App Store across Saudi Arabia. Three Flutter apps — Client, Worker, Branch — backed by a shared real-time platform that powers booking, payments, and field operations for thousands of customers each month.",
-      "منصة غسيل سيارات حسب الطلب، متاحة على Google Play وApp Store في المملكة العربية السعودية. ثلاثة تطبيقات Flutter — العميل والعامل والفرع — مدعومة بمنصة مشتركة في الوقت الفعلي تشغّل الحجز والدفع والعمليات الميدانية لآلاف العملاء شهرياً.",
+      "On-demand car wash platform live on Google Play and the App Store across Saudi Arabia. Two Flutter apps — Client and Worker — backed by a shared real-time platform that powers booking, payments, and field operations for tens of thousands of customers.",
+      "منصة غسيل سيارات حسب الطلب، متاحة على Google Play وApp Store في المملكة العربية السعودية. تطبيقا Flutter — العميل والعامل — مدعومان بمنصة مشتركة في الوقت الفعلي تشغّل الحجز والدفع والعمليات الميدانية لعشرات آلاف العملاء.",
     ),
     stack: [
       "Flutter",
@@ -90,92 +89,85 @@ const projectsRaw: Project[] = [
       "Firebase",
       "Firestore",
       "FCM",
-      "Stripe",
+      "MyFatoorah",
       "REST APIs",
       "GoRouter",
       "GetIt",
       "Hive",
     ],
     metrics: [
-      { label: ASHAFAQ_METRICS_ACTIVE, value: VAL_EN_AR("8,000+", "+8,000") },
-      { label: ASHAFAQ_METRICS_ORDERS, value: VAL_EN_AR("3,000+", "+3,000") },
-      { label: APPS_SHIPPED, value: VAL_EN_AR("3", "3") },
+      { label: ASHAFAQ_METRICS_ACTIVE, value: VAL_EN_AR("14,000+", "+14,000") },
+      { label: ASHAFAQ_METRICS_ORDERS, value: VAL_EN_AR("16,000+", "+16,000") },
+      { label: APPS_SHIPPED, value: VAL_EN_AR("2", "2") },
     ],
     icon: Smartphone,
     hero: true,
     accent: "from-accent/30 to-primary/10",
-    year: VAL_EN_AR("2024 — Present", "2024 — حتى الآن"),
+    year: VAL_EN_AR("2025 — Present", "2025 — حتى الآن"),
     role: VAL_EN_AR("Flutter Engineer · Owner of the mobile stack", "مهندس Flutter · مسؤول كامل البنية الموبايل"),
     cover: {
       src: "/images/projects/ashafaq/ashafaq_home.jpg",
       alt: VAL_EN_AR("Ashafaq Car Wash home screen showing services and active booking", "الشاشة الرئيسية لتطبيق الشفق تُظهر الخدمات والحجز النشط"),
       title: VAL_EN_AR("Home", "الرئيسية"),
-      caption: VAL_EN_AR("Home screen surfacing services, offers, and the active booking.", "الشاشة الرئيسية تعرض الخدمات والعروض والحجز النشط."),
+      caption: VAL_EN_AR("Home screen surfacing services and the active booking.", "الشاشة الرئيسية تعرض الخدمات والحجز النشط."),
     },
     keywords: [
       "Flutter production app",
       "Saudi Arabia mobile app",
       "Bloc Clean Architecture",
-      "Stripe Flutter integration",
+      "MyFatoorah Flutter integration",
       "Firebase FCM real-time",
       "Ashafaq Car Wash",
     ],
     caseStudy: {
       overview: VAL_EN_AR(
-        "Ashafaq is the on-demand car wash service operated by Al Shafaq Company in Saudi Arabia. I own the mobile stack — three Flutter apps that together serve customers, field workers, and branch managers on a single real-time platform. The product is live on the App Store and Google Play and has processed over 3,000 orders for more than 8,000 active users.",
-        "الشفق هي خدمة غسيل السيارات حسب الطلب التي تشغّلها شركة الشفق في المملكة العربية السعودية. أنا مسؤول عن البنية الموبايل بالكامل — ثلاثة تطبيقات Flutter تخدم العملاء والعمال الميدانيين ومديري الفروع عبر منصة واحدة في الوقت الفعلي. المنتج متاح على App Store وGoogle Play وقد عالج أكثر من 3,000 طلب لأكثر من 8,000 مستخدم نشط.",
+        "Ashafaq is the on-demand car wash service operated by Al Shafaq Company in Saudi Arabia. I own the mobile stack — two Flutter apps that together serve customers and field workers on a single real-time platform. The product is live on the App Store and Google Play and has processed over 16,000 orders for more than 14,000 active customers.",
+        "الشفق هي خدمة غسيل السيارات حسب الطلب التي تشغّلها شركة الشفق في المملكة العربية السعودية. أنا مسؤول عن البنية الموبايل بالكامل — تطبيقان بـ Flutter يخدمان العملاء والعمال الميدانيين عبر منصة واحدة في الوقت الفعلي. المنتج متاح على App Store وGoogle Play وقد عالج أكثر من 16,000 طلب لأكثر من 14,000 عميل نشط.",
       ),
       problem: VAL_EN_AR(
-        "Al Shafaq needed to scale a growing manual car wash operation into a digital product across the Saudi market. The previous workflow relied on phone calls and spreadsheets: customers had no way to book online, workers received jobs by phone with no shared state, and branch managers had no live visibility into queue health, worker availability, or revenue. The operation could not grow without a platform.",
-        "احتاجت شركة الشفق إلى توسيع عملية غسيل سيارات يدوية متنامية لتصبح منتجاً رقمياً في السوق السعودي. كان سير العمل السابق يعتمد على المكالمات الهاتفية وجداول البيانات: لم يكن للعملاء وسيلة للحجز عبر الإنترنت، وكان العمال يتلقّون الطلبات هاتفياً دون حالة مشتركة، ولم يكن لدى مديري الفروع رؤية حيّة لحجم الطابور وتوفّر العمال أو الإيرادات. لم يكن من الممكن للعملية أن تنمو دون منصة.",
+        "Al Shafaq needed to scale a growing manual car wash operation into a digital product across the Saudi market. The previous workflow relied on phone calls and spreadsheets: customers had no way to book online, and workers received jobs by phone with no shared state. The operation could not grow without a platform.",
+        "احتاجت شركة الشفق إلى توسيع عملية غسيل سيارات يدوية متنامية لتصبح منتجاً رقمياً في السوق السعودي. كان سير العمل السابق يعتمد على المكالمات الهاتفية وجداول البيانات: لم يكن للعملاء وسيلة للحجز عبر الإنترنت، وكان العمال يتلقّون الطلبات هاتفياً دون حالة مشتركة. لم يكن من الممكن للعملية أن تنمو دون منصة.",
       ),
       solution: VAL_EN_AR(
-        "I designed and shipped a three-app ecosystem on a single Flutter stack, backed by a shared Firebase + REST backend. Customers book and pay in under a minute through the Client app. Workers receive push-assigned jobs and complete them on a focused, offline-aware single-screen flow. Branch managers run live operations from a dashboard app with one-tap assignment. State changes propagate to every role in real time.",
-        "صمّمت وأطلقت منظومة من ثلاثة تطبيقات على بنية Flutter موحّدة، مدعومة بخلفية مشتركة من Firebase وREST. يحجز العملاء ويدفعون في أقل من دقيقة عبر تطبيق العميل. يتلقّى العمال طلباتهم عبر إشعارات الدفع ويُكملونها على شاشة واحدة مركّزة تعمل دون اتصال أيضاً. ويدير مديرو الفروع العمليات الحيّة من تطبيق لوحة قيادة مع إسناد بضغطة واحدة. تنتشر تغييرات الحالة لكل دور في الوقت الفعلي.",
+        "I designed and shipped a two-app ecosystem on a single Flutter stack, backed by a shared Firebase + REST backend. Customers book and pay in under a minute through the Client app. Workers receive push-assigned jobs and complete them on a focused single-screen flow that requires a live connection. State changes propagate to every role in real time.",
+        "صمّمت وأطلقت منظومة من تطبيقين على بنية Flutter موحّدة، مدعومة بخلفية مشتركة من Firebase وREST. يحجز العملاء ويدفعون في أقل من دقيقة عبر تطبيق العميل. يتلقّى العمال طلباتهم عبر إشعارات الدفع ويُكملونها على شاشة واحدة مركّزة تتطلّب اتصالاً حيّاً. تنتشر تغييرات الحالة لكل دور في الوقت الفعلي.",
       ),
       keyFeatures: [
         {
           title: VAL_EN_AR("Booking & wallet", "الحجز والمحفظة"),
           body: VAL_EN_AR(
-            "Service catalog, slot picker, add-ons, and a wallet with top-ups and Stripe-backed checkout — booking-to-payment completes in under 60 seconds.",
-            "فهرس خدمات، اختيار الوقت، إضافات، ومحفظة مع شحن رصيد وإتمام الدفع عبر Stripe — يتم الحجز والدفع في أقل من 60 ثانية.",
+            "Service catalog, slot picker, add-ons, and a wallet with top-ups and MyFatoorah-backed checkout — booking-to-payment completes in under 60 seconds.",
+            "فهرس خدمات، اختيار الوقت، إضافات، ومحفظة مع شحن رصيد وإتمام الدفع عبر ماي فاتورة — يتم الحجز والدفع في أقل من 60 ثانية.",
           ),
         },
         {
           title: VAL_EN_AR("Real-time order lifecycle", "دورة حياة الطلب في الوقت الفعلي"),
           body: VAL_EN_AR(
-            "Orders move through booking → assignment → in-progress → completion. Firestore broadcasts state to client, worker, and branch apps with no manual refresh.",
-            "تنتقل الطلبات من الحجز ← الإسناد ← قيد التنفيذ ← الإكمال. يبثّ Firestore الحالة إلى تطبيقات العميل والعامل والفرع دون أي تحديث يدوي.",
+            "Orders move through booking → assignment → in-progress → completion. Firestore broadcasts state between client and worker apps with no manual refresh.",
+            "تنتقل الطلبات من الحجز ← الإسناد ← قيد التنفيذ ← الإكمال. يبثّ Firestore الحالة بين تطبيقَي العميل والعامل دون أي تحديث يدوي.",
           ),
         },
         {
           title: VAL_EN_AR("Multi-role apps", "تطبيقات متعددة الأدوار"),
           body: VAL_EN_AR(
-            "Three apps share one backend. Worker app is push-driven and offline-aware; Branch app shows live queue, worker availability, and rolling revenue.",
-            "ثلاثة تطبيقات تتشارك خلفية واحدة. تطبيق العامل يعتمد على الإشعارات ويعمل دون اتصال؛ وتطبيق الفرع يعرض الطابور الحيّ وتوفّر العمال والإيرادات المتجدّدة.",
+            "Two apps share one backend. The Worker app is push-driven and always online, delivering jobs and state updates in real time.",
+            "تطبيقان يتشاركان خلفية واحدة. تطبيق العامل يعتمد على الإشعارات ويكون متصلاً دائماً لتسليم الطلبات وتحديثات الحالة في الوقت الفعلي.",
           ),
         },
         {
           title: VAL_EN_AR("Push notifications via FCM", "إشعارات الدفع عبر FCM"),
           body: VAL_EN_AR(
-            "Transactional FCM payloads for booking confirmation, worker assignment, completion receipts, and promo broadcasts.",
-            "حمولات FCM للتأكيد على الحجز، وإسناد العمال، وإيصالات الإكمال، وبث العروض.",
-          ),
-        },
-        {
-          title: VAL_EN_AR("Promotions & rewards", "العروض والمكافآت"),
-          body: VAL_EN_AR(
-            "Promo codes and a rewards system designed to drive repeat use — wired directly into the booking and wallet flows.",
-            "أكواد عروض ونظام مكافآت مصمَّمة لتعزيز الاستخدام المتكرّر — موصولة مباشرة بتدفقات الحجز والمحفظة.",
+            "Transactional FCM payloads for booking confirmation, worker assignment, and completion receipts.",
+            "حمولات FCM للتأكيد على الحجز، وإسناد العمال، وإيصالات الإكمال.",
           ),
         },
       ],
       architecture: [
         {
-          title: VAL_EN_AR("Clean Architecture across three apps", "Clean Architecture عبر ثلاثة تطبيقات"),
+          title: VAL_EN_AR("Clean Architecture across two apps", "Clean Architecture عبر تطبيقين"),
           body: VAL_EN_AR(
-            "Strict domain / data / presentation split with a shared domain layer. Business rules stay consistent across all three apps even as features ship independently.",
-            "فصل صارم بين طبقات الـ domain والـ data والعرض مع طبقة domain مشتركة. تبقى قواعد العمل ثابتة عبر التطبيقات الثلاثة حتى مع إطلاق الميزات بشكل مستقل.",
+            "Strict domain / data / presentation split with a shared domain layer. Business rules stay consistent across both apps even as features ship independently.",
+            "فصل صارم بين طبقات الـ domain والـ data والعرض مع طبقة domain مشتركة. تبقى قواعد العمل ثابتة عبر التطبيقَين حتى مع إطلاق الميزات بشكل مستقل.",
           ),
         },
         {
@@ -201,9 +193,9 @@ const projectsRaw: Project[] = [
         },
       ],
       results: [
-        { label: ASHAFAQ_METRICS_ACTIVE, value: VAL_EN_AR("8,000+", "+8,000") },
-        { label: VAL_EN_AR("Orders processed", "طلبات مُعالَجة"), value: VAL_EN_AR("3,000+", "+3,000") },
-        { label: VAL_EN_AR("Production apps", "تطبيقات إنتاجية"), value: VAL_EN_AR("3", "3") },
+        { label: ASHAFAQ_METRICS_ACTIVE, value: VAL_EN_AR("14,000+", "+14,000") },
+        { label: VAL_EN_AR("Orders processed", "طلبات مُعالَجة"), value: VAL_EN_AR("16,000+", "+16,000") },
+        { label: VAL_EN_AR("Production apps", "تطبيقات إنتاجية"), value: VAL_EN_AR("2", "2") },
         { label: VAL_EN_AR("Crash-free sessions", "جلسات بلا أعطال"), value: VAL_EN_AR("99.6%", "%99.6") },
       ],
       lessonsLearned: [
@@ -261,7 +253,7 @@ const projectsRaw: Project[] = [
           src: "/images/projects/ashafaq/ashafaq_wallet.jpg",
           alt: VAL_EN_AR("Ashafaq wallet and payments", "المحفظة والمدفوعات في الشفق"),
           title: VAL_EN_AR("Wallet", "المحفظة"),
-          caption: VAL_EN_AR("Wallet balance, Stripe top-ups, and payment history.", "رصيد المحفظة، شحن الرصيد عبر Stripe، وسجل المدفوعات."),
+          caption: VAL_EN_AR("Wallet balance, MyFatoorah top-ups, and payment history.", "رصيد المحفظة، شحن الرصيد عبر ماي فاتورة، وسجل المدفوعات."),
         },
       ],
     },
@@ -273,10 +265,10 @@ const projectsRaw: Project[] = [
   {
     slug: "shamfix",
     title: VAL_EN_AR("ShamFix", "شام فيكس"),
-    tagline: VAL_EN_AR("Smart maintenance platform · Graduation project", "منصة صيانة ذكية · مشروع التخرّج"),
+    tagline: VAL_EN_AR("Smart maintenance platform", "منصة صيانة ذكية"),
     description: VAL_EN_AR(
-      "AI-assisted smart home and building maintenance platform that connects customers with vetted technicians. Two Flutter apps (Client and Technician), an eight-stage maintenance workflow, Stripe payments, and a Laravel API backend — built end-to-end as a graduation project.",
-      "منصة صيانة ذكية للمنازل والمباني مدعومة بالذكاء الاصطناعي، تربط العملاء بفنّيين موثوقين. تطبيقا Flutter (العميل والفنّي)، وتدفق صيانة من ثماني مراحل، ومدفوعات عبر Stripe، وخلفية بـ Laravel — بُنيت كاملةً كمشروع تخرّج.",
+      "AI-assisted smart home and building maintenance platform that connects customers with vetted technicians. Two Flutter apps (Client and Technician), an eight-stage maintenance workflow, Stripe payments, and a Laravel API backend — built end-to-end. Full scenario walkthrough on YouTube: https://youtu.be/n836lOuQZqg",
+      "منصة صيانة ذكية للمنازل والمباني مدعومة بالذكاء الاصطناعي، تربط العملاء بفنّيين موثوقين. تطبيقا Flutter (العميل والفنّي)، وتدفق صيانة من ثماني مراحل، ومدفوعات عبر Stripe، وخلفية بـ Laravel — مبنيّة كاملةً من الطرف إلى الطرف. سيناريو كامل بين العميل والعامل على YouTube: https://youtu.be/n836lOuQZqg",
     ),
     stack: [
       "Flutter",
@@ -295,11 +287,11 @@ const projectsRaw: Project[] = [
     metrics: [
       { label: APPS_SHIPPED, value: VAL_EN_AR("2", "2") },
       { label: VAL_EN_AR("Workflow stages", "مراحل سير العمل"), value: VAL_EN_AR("8", "8") },
-      { label: VAL_EN_AR("Graduation grade", "تقدير التخرّج"), value: VAL_EN_AR("Distinction", "امتياز") },
+      { label: VAL_EN_AR("Roles", "الأدوار"), value: VAL_EN_AR("Customer + Technician", "عميل + فنّي") },
     ],
     icon: Wrench,
     accent: "from-accent/20 to-transparent",
-    year: VAL_EN_AR("2024", "2024"),
+    year: VAL_EN_AR("2025 — 2026", "2025 — 2026"),
     role: VAL_EN_AR("Mobile architect · End-to-end build", "مهندس موبايل · بناء من البداية للنهاية"),
     cover: {
       src: "/images/projects/shamfix/ShamFix_home.jpg",
@@ -312,13 +304,12 @@ const projectsRaw: Project[] = [
       "AI fault diagnosis Flutter",
       "Laravel API Flutter integration",
       "Stripe Firebase Flutter",
-      "Graduation project Flutter",
       "ShamFix",
     ],
     caseStudy: {
       overview: VAL_EN_AR(
-        "ShamFix is a smart home and building maintenance platform that pairs customers with vetted technicians and applies AI-assisted fault diagnosis to triage requests before a technician is dispatched. Built as my graduation project, it ships as two Flutter apps (Client and Technician) backed by a Laravel API, Firebase, and Stripe, with an eight-stage maintenance workflow that models the full job lifecycle.",
-        "شام فيكس منصة صيانة ذكية للمنازل والمباني، تربط العملاء بفنّيين موثوقين وتستخدم تشخيصاً ذكياً للأعطال لفرز الطلبات قبل إرسال الفنّي. بُنيت كمشروع تخرّج، وتُطلق كتطبيقَي Flutter (العميل والفنّي) مدعومَين بخلفية Laravel وFirebase وStripe، مع تدفق صيانة من ثماني مراحل يُنمذج كامل دورة حياة الطلب.",
+        "ShamFix is a smart home and building maintenance platform that pairs customers with vetted technicians and applies AI-assisted fault diagnosis to triage requests before a technician is dispatched. It ships as two Flutter apps (Client and Technician) backed by a Laravel API, Firebase, and Stripe, with an eight-stage maintenance workflow that models the full job lifecycle. A full end-to-end scenario between a customer and a technician is available on YouTube: https://youtu.be/n836lOuQZqg",
+        "شام فيكس منصة صيانة ذكية للمنازل والمباني، تربط العملاء بفنّيين موثوقين وتستخدم تشخيصاً ذكياً للأعطال لفرز الطلبات قبل إرسال الفنّي. تُطلق كتطبيقَي Flutter (العميل والفنّي) مدعومَين بخلفية Laravel وFirebase وStripe، مع تدفق صيانة من ثماني مراحل يُنمذج كامل دورة حياة الطلب. يمكن مشاهدة سيناريو كامل بين العميل والفنّي على YouTube: https://youtu.be/n836lOuQZqg",
       ),
       problem: VAL_EN_AR(
         "Finding a reliable home maintenance technician is fragmented and word-of-mouth. Customers can't compare providers or see ratings; technicians have no structured way to grow a customer base; and triaging a fault correctly the first time is hard, which leads to wasted dispatches and unhappy customers on both sides of the marketplace.",
@@ -399,7 +390,7 @@ const projectsRaw: Project[] = [
         { label: VAL_EN_AR("Workflow stages", "مراحل سير العمل"), value: VAL_EN_AR("8", "8") },
         { label: APPS_SHIPPED, value: VAL_EN_AR("2", "2") },
         { label: VAL_EN_AR("Roles modeled", "أدوار مُنمذَجة"), value: VAL_EN_AR("Customer + Technician", "عميل + فنّي") },
-        { label: VAL_EN_AR("Graduation grade", "تقدير التخرّج"), value: VAL_EN_AR("Distinction", "امتياز") },
+        { label: VAL_EN_AR("Full scenario", "سيناريو كامل"), value: VAL_EN_AR("YouTube", "YouTube") },
       ],
       lessonsLearned: [
         VAL_EN_AR(
@@ -470,8 +461,8 @@ const projectsRaw: Project[] = [
     title: VAL_EN_AR("Ashafaq Worker App", "تطبيق عامل الشفق"),
     tagline: VAL_EN_AR("Internal production app · Saudi Arabia", "تطبيق إنتاجي داخلي · المملكة العربية السعودية"),
     description: VAL_EN_AR(
-      "Worker-side companion app for the Ashafaq Car Wash platform. Built for field workers across Saudi Arabia to claim and complete jobs through an explicit four-stage order workflow (Accepted → Arrived → In Progress → Completed). Multi-language UI in Arabic, English, Hindi, and Bengali to match the on-the-ground workforce.",
-      "تطبيق العامل المرافق لمنصة الشفق لغسيل السيارات. مبنيّ للعمال الميدانيين في المملكة العربية السعودية لاستلام الطلبات وإكمالها عبر تدفّق صريح من أربع مراحل (مقبول ← وصل ← قيد التنفيذ ← مُكتمل). واجهة متعدّدة اللغات بالعربية والإنجليزية والهندية والبنغالية لتناسب فريق العمل في الميدان.",
+      "Worker-side companion app for the Ashafaq Car Wash platform. Built for field workers across Saudi Arabia to claim and complete jobs through an explicit four-stage order workflow (Accepted → Arrived → In Progress → Completed). Multi-language UI in Arabic, English, Hindi, and Bengali to match the on-the-ground workforce. Always online — every state change syncs live via Firestore and FCM.",
+      "تطبيق العامل المرافق لمنصة الشفق لغسيل السيارات. مبنيّ للعمال الميدانيين في المملكة العربية السعودية لاستلام الطلبات وإكمالها عبر تدفّق صريح من أربع مراحل (مقبول ← وصل ← قيد التنفيذ ← مُكتمل). واجهة متعدّدة اللغات بالعربية والإنجليزية والهندية والبنغالية لتناسب فريق العمل في الميدان. متصل دائماً — كل تغيير حالة يُزامَن حيّاً عبر Firestore وFCM.",
     ),
     stack: [
       "Flutter",
@@ -484,7 +475,6 @@ const projectsRaw: Project[] = [
       "REST APIs",
       "GoRouter",
       "GetIt",
-      "Hive",
       "i18n (AR / EN / HI / BN)",
     ],
     metrics: [
@@ -494,7 +484,7 @@ const projectsRaw: Project[] = [
     ],
     icon: HardHat,
     accent: "from-primary/15 to-transparent",
-    year: VAL_EN_AR("2024 — Present", "2024 — حتى الآن"),
+    year: VAL_EN_AR("Jul 2025 — Aug 2025", "تموز 2025 — آب 2025"),
     role: VAL_EN_AR("Flutter Engineer · Worker app owner", "مهندس Flutter · مسؤول تطبيق العامل"),
     keywords: [
       "Flutter production app",
@@ -514,8 +504,8 @@ const projectsRaw: Project[] = [
         "يأتي العمال الميدانيون في قطاع غسيل السيارات السعودي من قوى عاملة متعدّدة اللغات — متحدّثو العربية والإنجليزية والهندية والبنغالية يعملون جنباً إلى جنب. يحتاجون إلى أداة يمكنهم قراءتها بلغتهم، تُظهر الطلب الصحيح في الوقت الصحيح، وتُعالج تحوّلات الحالة بشكل صحيح حتى عندما يكون اتصال الشبكة في موقف السيارات غير موثوق. تطبيق إنجليزي فقط لا يُمكن إطلاقه.",
       ),
       solution: VAL_EN_AR(
-        "A focused Flutter app with full i18n in four languages and an explicit four-stage state machine for orders. FCM push delivers a deep link directly to the assigned job; the worker confirms arrival, marks in-progress, and completes — each transition broadcast over Firestore to the Client and Branch apps in real time. Offline-aware completion queues actions when the network drops and reconciles on reconnect.",
-        "تطبيق Flutter مُركَّز بدعم i18n كامل بأربع لغات وآلة حالة صريحة من أربع مراحل للطلبات. يُسلِّم FCM رابطاً عميقاً مباشرة إلى الطلب المُسنَد؛ يؤكّد العامل وصوله، ثم يُحدّد البدء، ثم الإكمال — وكل تحوّل يُبَثّ عبر Firestore إلى تطبيقَي العميل والفرع في الوقت الفعلي. وعند ضعف الشبكة تُصَفّ إجراءات الإكمال محلياً وتتزامن عند عودة الاتصال.",
+        "A focused Flutter app with full i18n in four languages and an explicit four-stage state machine for orders. FCM push delivers a deep link directly to the assigned job; the worker confirms arrival, marks in-progress, and completes — each transition broadcast over Firestore to the Client app in real time. The app is designed for always-connected use in the field, where a live connection is required to stay in sync with the dispatch pipeline.",
+        "تطبيق Flutter مُركَّز بدعم i18n كامل بأربع لغات وآلة حالة صريحة من أربع مراحل للطلبات. يُسلِّم FCM رابطاً عميقاً مباشرة إلى الطلب المُسنَد؛ يؤكّد العامل وصوله، ثم يُحدّد البدء، ثم الإكمال — وكل تحوّل يُبَثّ عبر Firestore إلى تطبيق العميل في الوقت الفعلي. التطبيق مُصمَّم للاستخدام مع اتصال دائم في الميدان، إذ يتطلّب اتصالاً حيّاً للبقاء متزامناً مع خطّ الإسناد.",
       ),
       keyFeatures: [
         {
@@ -535,8 +525,8 @@ const projectsRaw: Project[] = [
         {
           title: VAL_EN_AR("Real-time order updates", "تحديثات الطلبات في الوقت الفعلي"),
           body: VAL_EN_AR(
-            "Order state streams from Firestore; assignment changes from the Branch app land on the Worker app instantly.",
-            "تتدفّق حالة الطلب من Firestore؛ وتظهر تغييرات الإسناد من تطبيق الفرع على تطبيق العامل فوراً.",
+            "Order state streams live from Firestore; new assignments and status changes land on the worker's screen instantly.",
+            "تتدفّق حالة الطلب حيّاً من Firestore؛ وتصل الإسنادات وتغييرات الحالة إلى شاشة العامل فوراً.",
           ),
         },
         {
@@ -549,8 +539,8 @@ const projectsRaw: Project[] = [
         {
           title: VAL_EN_AR("Worker status management", "إدارة حالة العامل"),
           body: VAL_EN_AR(
-            "Worker toggles availability and breaks. State is broadcast to the Branch dashboard for live operations.",
-            "يبدّل العامل التوفّر والاستراحات. تُبَثّ الحالة إلى لوحة الفرع للعمليات الحيّة.",
+            "Worker toggles availability and breaks. State is broadcast to the platform in real time so dispatch always reflects who is actually working.",
+            "يبدّل العامل التوفّر والاستراحات. تُبَثّ الحالة إلى المنصة في الوقت الفعلي بحيث يعكس الإسناد دائماً من هو فعلياً على العمل.",
           ),
         },
         {
@@ -570,17 +560,17 @@ const projectsRaw: Project[] = [
           ),
         },
         {
-          title: VAL_EN_AR("Shared domain with Client + Branch", "نطاق مشترك مع تطبيقَي العميل والفرع"),
+          title: VAL_EN_AR("Shared domain with the Client app", "نطاق مشترك مع تطبيق العميل"),
           body: VAL_EN_AR(
-            "Reuses the Ashafaq platform domain layer (order, worker, branch, payment). Business rules stay consistent across all three apps.",
-            "يُعيد استخدام طبقة domain لمنصة الشفق (الطلب، العامل، الفرع، الدفع). تبقى قواعد العمل ثابتة عبر التطبيقات الثلاثة.",
+            "Reuses the Ashafaq platform domain layer (order, worker, payment). Business rules stay consistent across both apps.",
+            "يُعيد استخدام طبقة domain لمنصة الشفق (الطلب، العامل، الدفع). تبقى قواعد العمل ثابتة عبر التطبيقَين.",
           ),
         },
         {
-          title: VAL_EN_AR("Offline-aware completion queue", "طابور إكمال يدرك حالة الاتصال"),
+          title: VAL_EN_AR("Always-connected dispatch", "إسناد بحاجة اتصال دائم"),
           body: VAL_EN_AR(
-            "Completion actions are persisted to Hive locally and synced when connectivity returns — no lost work in a low-signal parking lot.",
-            "تُحفَظ إجراءات الإكمال في Hive محلياً وتُزامَن عند عودة الاتصال — لا يضيع أي عمل في موقف ذي إشارة ضعيفة.",
+            "The Worker app requires a live connection: assignments, state changes, and completions all round-trip through Firestore so dispatch is never out of date.",
+            "يتطلّب تطبيق العامل اتصالاً حيّاً: الإسناد وتغييرات الحالة والإكمال تمرّ جميعها عبر Firestore بحيث لا يتأخّر الإسناد أبداً.",
           ),
         },
         {
@@ -595,7 +585,7 @@ const projectsRaw: Project[] = [
         { label: VAL_EN_AR("Order stages", "مراحل الطلب"), value: VAL_EN_AR("4", "4") },
         { label: VAL_EN_AR("Languages", "اللغات"), value: VAL_EN_AR("4", "4") },
         { label: VAL_EN_AR("Status", "الحالة"), value: VAL_EN_AR("In production", "في الإنتاج") },
-        { label: VAL_EN_AR("Offline", "دون اتصال"), value: VAL_EN_AR("Resilient", "صامد") },
+        { label: VAL_EN_AR("Sync", "المزامنة"), value: VAL_EN_AR("Real-time", "في الوقت الفعلي") },
       ],
       lessonsLearned: [
         VAL_EN_AR(
@@ -609,157 +599,6 @@ const projectsRaw: Project[] = [
         VAL_EN_AR(
           "FCM deep links into the assigned job are the single highest-leverage UX choice for a field app — every saved tap compounds across hundreds of orders per day.",
           "روابط FCM العميقة إلى الطلب المُسنَد هي أكثر قرار تجربة استخدام تأثيراً في تطبيق ميداني — كل ضغطة يتم توفيرها تتراكم عبر مئات الطلبات يومياً.",
-        ),
-      ],
-      screenshots: [],
-    },
-  },
-
-  // ────────────────────────────────────────────────────────────────────────
-  // 4. ASHAFAQ BRANCH — production management app
-  // ────────────────────────────────────────────────────────────────────────
-  {
-    slug: "ashafaq-branch",
-    title: VAL_EN_AR("Ashafaq Branch App", "تطبيق فرع الشفق"),
-    tagline: VAL_EN_AR("Branch management · Riyadh · 11 branches", "إدارة الفروع · الرياض · 11 فرعاً"),
-    description: VAL_EN_AR(
-      "Branch management application used across 11 Ashafaq branches in Riyadh. A dashboard-first Flutter app for live order assignment, worker coordination, and operational monitoring — the daily tool branch managers use to run a multi-location car wash operation in real time.",
-      "تطبيق إدارة الفروع المُستخدَم في 11 فرعاً من فروع الشفق في الرياض. تطبيق Flutter يعتمد على لوحة قيادة لإسناد الطلبات الحيّ وتنسيق العمال ومراقبة العمليات — الأداة اليومية التي يستخدمها مديرو الفروع لإدارة عمليات غسيل سيارات متعدّدة المواقع في الوقت الفعلي.",
-    ),
-    stack: [
-      "Flutter",
-      "Dart",
-      "Bloc",
-      "Clean Architecture",
-      "Firebase",
-      "Firestore",
-      "REST APIs",
-      "FCM",
-      "GoRouter",
-      "GetIt",
-    ],
-    metrics: [
-      { label: VAL_EN_AR("Live branches", "فروع نشطة"), value: VAL_EN_AR("11", "11") },
-      { label: VAL_EN_AR("Region", "المنطقة"), value: VAL_EN_AR("Riyadh", "الرياض") },
-      { label: VAL_EN_AR("Assignment", "الإسناد"), value: VAL_EN_AR("1-tap", "بضغطة واحدة") },
-    ],
-    icon: Building2,
-    accent: "from-accent/15 to-transparent",
-    year: VAL_EN_AR("2024 — Present", "2024 — حتى الآن"),
-    role: VAL_EN_AR("Flutter Engineer · Branch app owner", "مهندس Flutter · مسؤول تطبيق الفرع"),
-    keywords: [
-      "Flutter operations dashboard",
-      "Branch management Flutter",
-      "Multi-branch Flutter app",
-      "Live ops Flutter app",
-      "Ashafaq Branch",
-      "Riyadh car wash dashboard",
-    ],
-    caseStudy: {
-      overview: VAL_EN_AR(
-        "The Ashafaq Branch app is the operational dashboard for Ashafaq's 11 branches in Riyadh. It's the tool branch managers use every day to see the live queue, assign workers, monitor performance, and coordinate staff across multiple locations. Built on Flutter with a shared domain layer, it stays in lockstep with the Client and Worker apps on the Ashafaq platform.",
-        "تطبيق فرع الشفق هو لوحة القيادة التشغيليّة لـ 11 فرعاً من فروع الشفق في الرياض. إنه الأداة التي يستخدمها مديرو الفروع يومياً لرؤية الطابور الحيّ وإسناد العمال ومراقبة الأداء وتنسيق الفِرَق عبر مواقع متعدّدة. مبنيّ بـ Flutter مع طبقة domain مشتركة، يبقى متزامناً مع تطبيقَي العميل والعامل في منصة الشفق.",
-      ),
-      problem: VAL_EN_AR(
-        "Running 11 branches in real time is impossible without a single pane of glass. Managers needed live visibility into who's free, what's in the queue, and how the day is performing — without bouncing between phone calls, spreadsheets, and the worker app. Multi-branch operations also need the assignment workflow to be one tap, not five.",
-        "إدارة 11 فرعاً في الوقت الفعلي مستحيلة دون نافذة موحَّدة. احتاج المديرون إلى رؤية حيّة لمن هو متاح، ما هو في الطابور، وكيف يسير اليوم — دون التنقّل بين المكالمات وجداول البيانات وتطبيق العامل. كما تحتاج العمليات متعدّدة الفروع إلى أن يكون تدفّق الإسناد بضغطة واحدة لا بخمسة.",
-      ),
-      solution: VAL_EN_AR(
-        "A dashboard-first Flutter app showing live queue, worker availability, and rolling revenue per branch. One-tap worker assignment broadcasts via Firestore to the Worker app in a single round-trip. Multi-branch support lets the platform scale horizontally — adding a new branch is configuration, not deployment.",
-        "تطبيق Flutter يعتمد على لوحة قيادة يعرض الطابور الحيّ وتوفّر العمال والإيرادات المتجدّدة لكل فرع. إسناد العامل بضغطة واحدة يُبَثّ عبر Firestore إلى تطبيق العامل في رحلة واحدة. ودعم الفروع المتعدّدة يُتيح للمنصة التوسّع أفقياً — إضافة فرع جديد إعدادٌ لا نشر.",
-      ),
-      keyFeatures: [
-        {
-          title: VAL_EN_AR("Branch operations dashboard", "لوحة عمليات الفرع"),
-          body: VAL_EN_AR(
-            "Single screen showing live queue, worker availability, and the day's performance — the manager's home base.",
-            "شاشة واحدة تعرض الطابور الحيّ وتوفّر العمال وأداء اليوم — قاعدة المدير الرئيسيّة.",
-          ),
-        },
-        {
-          title: VAL_EN_AR("Order management", "إدارة الطلبات"),
-          body: VAL_EN_AR(
-            "View, filter, and triage active orders across the branch. Reassign or cancel from the same view.",
-            "عرض الطلبات النشطة وتصفيتها وفرزها عبر الفرع. إعادة الإسناد أو الإلغاء من العرض نفسه.",
-          ),
-        },
-        {
-          title: VAL_EN_AR("One-tap worker assignment", "إسناد العامل بضغطة واحدة"),
-          body: VAL_EN_AR(
-            "Manager assigns a worker; the change broadcasts to client and worker apps in one round-trip — no friction, no double-dispatch.",
-            "يُسنِد المدير العامل؛ ويُبَثّ التغيير إلى تطبيقَي العميل والعامل في رحلة واحدة — دون احتكاك ودون ازدواج إسناد.",
-          ),
-        },
-        {
-          title: VAL_EN_AR("Live request handling", "التعامل مع الطلبات الحيّة"),
-          body: VAL_EN_AR(
-            "Incoming requests appear in real time via Firestore — no manual refresh, no missed jobs.",
-            "تظهر الطلبات الواردة فورياً عبر Firestore — دون تحديث يدوي ودون طلبات ضائعة.",
-          ),
-        },
-        {
-          title: VAL_EN_AR("Multi-branch support", "دعم تعدّد الفروع"),
-          body: VAL_EN_AR(
-            "Scales across 11 branches today; the architecture lets a 12th branch be a configuration change.",
-            "يتوسّع عبر 11 فرعاً حالياً؛ وتسمح البنية بأن يكون الفرع الثاني عشر تغيير إعدادات.",
-          ),
-        },
-        {
-          title: VAL_EN_AR("Performance tracking", "تتبّع الأداء"),
-          body: VAL_EN_AR(
-            "Rolling revenue, completed orders, and worker performance per branch — visible to the manager all day long.",
-            "إيرادات متجدّدة وطلبات مُكتملة وأداء العامل لكل فرع — مرئية للمدير طوال اليوم.",
-          ),
-        },
-      ],
-      architecture: [
-        {
-          title: VAL_EN_AR("Realtime ops view via Firestore", "عرض عمليات حيّة عبر Firestore"),
-          body: VAL_EN_AR(
-            "Queue, worker availability, and order state flow through Firestore listeners scoped per branch.",
-            "يتدفّق الطابور وتوفّر العمال وحالة الطلب عبر مستمعي Firestore محصورين لكل فرع.",
-          ),
-        },
-        {
-          title: VAL_EN_AR("Shared domain with the Ashafaq platform", "نطاق مشترك مع منصة الشفق"),
-          body: VAL_EN_AR(
-            "The Branch app sits on the same domain layer as the Client and Worker apps. Business rules stay aligned automatically.",
-            "يجلس تطبيق الفرع على طبقة domain نفسها التي يجلس عليها تطبيقا العميل والعامل. تبقى قواعد العمل متوافقة تلقائياً.",
-          ),
-        },
-        {
-          title: VAL_EN_AR("One-tap assignment flow", "تدفّق إسناد بضغطة واحدة"),
-          body: VAL_EN_AR(
-            "Assignment is a single Bloc event that updates Firestore and triggers FCM in one path — no race conditions, no double-dispatch.",
-            "الإسناد حدث Bloc واحد يُحدّث Firestore ويُطلق FCM في مسار واحد — دون حالات سباق ودون ازدواج إسناد.",
-          ),
-        },
-        {
-          title: VAL_EN_AR("Branch-scoped data model", "نموذج بيانات مَحصور بالفرع"),
-          body: VAL_EN_AR(
-            "All queries and listeners are scoped by branch ID, so adding a branch doesn't grow query cost for existing ones.",
-            "كل الاستعلامات والمستمعين محصورون بمعرّف الفرع، لذا فإن إضافة فرع لا تزيد تكلفة الاستعلام للفروع القائمة.",
-          ),
-        },
-      ],
-      results: [
-        { label: VAL_EN_AR("Live branches", "فروع نشطة"), value: VAL_EN_AR("11", "11") },
-        { label: VAL_EN_AR("Region", "المنطقة"), value: VAL_EN_AR("Riyadh", "الرياض") },
-        { label: VAL_EN_AR("Visibility", "الرؤية"), value: VAL_EN_AR("Live", "حيّة") },
-        { label: VAL_EN_AR("Assignment", "الإسناد"), value: VAL_EN_AR("1-tap", "بضغطة واحدة") },
-      ],
-      lessonsLearned: [
-        VAL_EN_AR(
-          "Dashboard apps live or die by latency. Keeping every list backed by a Firestore listener — not a periodic refresh — was the difference between a usable app and a frustrating one.",
-          "تطبيقات لوحة القيادة تحيا أو تموت بحسب الكمون. إبقاء كل قائمة مدعومة بمستمع Firestore — لا بتحديث دوري — كان الفارق بين تطبيق صالح للاستخدام وآخر مُحبط.",
-        ),
-        VAL_EN_AR(
-          "Multi-branch from day one is cheaper than retrofitting it. Scoping every read by branch ID early made the move from 1 branch to 11 a non-event.",
-          "تعدّد الفروع منذ اليوم الأول أرخص من إضافته لاحقاً. حصرُ كل قراءة بمعرّف الفرع باكراً جعل الانتقال من فرع واحد إلى 11 فرعاً حدثاً غير مُلاحَظ.",
-        ),
-        VAL_EN_AR(
-          "Operational tools need to feel like one screen, not a tree of nested pages. Managers don't tap five times to assign a worker — they tap once.",
-          "أدوات العمليات يجب أن تشعر وكأنها شاشة واحدة، لا شجرة من الصفحات المتداخلة. لا يضغط المديرون خمس مرّات لإسناد عامل — بل ضغطة واحدة.",
         ),
       ],
       screenshots: [],
@@ -795,7 +634,7 @@ const projectsRaw: Project[] = [
     ],
     icon: UtensilsCrossed,
     accent: "from-primary/20 to-transparent",
-    year: VAL_EN_AR("2023", "2023"),
+    year: VAL_EN_AR("Aug 2025 — Feb 2026", "آب 2025 — شباط 2026"),
     role: VAL_EN_AR("Flutter Engineer · Distributed team", "مهندس Flutter · فريق موزّع"),
     cover: {
       src: "/images/projects/food-delivery/wassi_home1.png",
@@ -846,10 +685,10 @@ const projectsRaw: Project[] = [
           ),
         },
         {
-          title: VAL_EN_AR("Offline-first cart", "سلّة تعمل دون اتصال أولاً"),
+          title: VAL_EN_AR("Persistent cart", "سلّة ثابتة"),
           body: VAL_EN_AR(
-            "Hive-backed local cart that survives app restarts; reconciles with the server on resume.",
-            "سلّة محلّية مدعومة بـ Hive تصمد أمام إعادة تشغيل التطبيق، وتتزامن مع الخادم عند الاستئناف.",
+            "Hive-backed local cart that survives app restarts and reconciles with the latest menu on resume.",
+            "سلّة محلّية مدعومة بـ Hive تصمد أمام إعادة تشغيل التطبيق، وتتزامن مع أحدث قائمة عند الاستئناف.",
           ),
         },
       ],
@@ -869,7 +708,7 @@ const projectsRaw: Project[] = [
           ),
         },
         {
-          title: VAL_EN_AR("Offline-aware cart", "سلّة تدرك حالة الاتصال"),
+          title: VAL_EN_AR("Cart reconciliation", "تسوية السلّة"),
           body: VAL_EN_AR(
             "Hive persists the cart locally. On resume the cart reconciles against the latest restaurant menu so price changes propagate without losing items.",
             "يحفظ Hive السلّة محلياً. عند الاستئناف تتزامن السلّة مع أحدث قائمة طعام للمطعم لتنتشر تغييرات الأسعار دون فقدان الأصناف.",
@@ -879,7 +718,7 @@ const projectsRaw: Project[] = [
       results: [
         { label: VAL_EN_AR("Team", "الفريق"), value: VAL_EN_AR("Distributed", "موزّع") },
         { label: VAL_EN_AR("Platforms", "المنصّات"), value: VAL_EN_AR("iOS + Android", "iOS + Android") },
-        { label: VAL_EN_AR("Cart reliability", "موثوقية السلّة"), value: VAL_EN_AR("Offline-first", "تعمل دون اتصال أولاً") },
+        { label: VAL_EN_AR("Cart", "السلّة"), value: VAL_EN_AR("Persistent", "ثابتة") },
       ],
       lessonsLearned: [
         VAL_EN_AR(
@@ -887,8 +726,8 @@ const projectsRaw: Project[] = [
           "الواجهات الصغيرة المحدَّدة جيداً للوحدات هي أكبر مُمكِّن للعمل الموزّع غير المتزامن — تجعل مراجعة الكود نشاطاً محلياً لا عالمياً.",
         ),
         VAL_EN_AR(
-          "An offline-first cart is non-negotiable in a region with patchy connectivity. The reconciliation step is the part most teams forget.",
-          "السلّة التي تعمل دون اتصال أولاً غير قابلة للنقاش في منطقة ذات اتصال متقطّع. خطوة التزامن هي الجزء الذي تنساه معظم الفِرَق.",
+          "A cart that persists across restarts and reconciles cleanly against the current menu removes an entire class of checkout bugs.",
+          "سلّة تصمد عبر إعادة التشغيل وتتزامن بنظافة مع القائمة الحالية تُلغي فئةً كاملة من أعطال الدفع.",
         ),
       ],
       screenshots: [
@@ -955,7 +794,7 @@ const projectsRaw: Project[] = [
     ],
     icon: Stethoscope,
     accent: "from-accent/15 to-transparent",
-    year: VAL_EN_AR("2023", "2023"),
+    year: VAL_EN_AR("Oct 2024 — Mar 2025", "تشرين الأول 2024 — آذار 2025"),
     role: VAL_EN_AR("Flutter Engineer", "مهندس Flutter"),
     cover: {
       src: "/images/projects/doctor/Doctor_app_home.jpg",
@@ -1119,7 +958,6 @@ export const PROJECT_ORDER: readonly string[] = [
   "shamfix",
   "food-delivery",
   "ashafaq-worker",
-  "ashafaq-branch",
   "doctor-appointment",
 ];
 
@@ -1194,20 +1032,20 @@ export const experiences: Experience[] = [
   {
     company: VAL_EN_AR("Al Shafaq Company", "شركة الشفق"),
     role: VAL_EN_AR("Flutter Developer", "مطوّر Flutter"),
-    period: VAL_EN_AR("2024 — Present", "2024 — حتى الآن"),
+    period: VAL_EN_AR("2025 — Present", "2025 — حتى الآن"),
     location: VAL_EN_AR("Saudi Arabia · Remote", "المملكة العربية السعودية · عن بُعد"),
     highlights: [
       VAL_EN_AR(
-        "Shipped and maintain the Ashafaq Car Wash production platform — 8,000+ active users and 3,000+ completed orders, live on the App Store and Google Play.",
-        "أطلقت وأصون منصة الشفق لغسيل السيارات في الإنتاج — أكثر من 8,000 مستخدم نشط و3,000 طلب مُنجَز، متاحة على App Store وGoogle Play.",
+        "Shipped and maintain the Ashafaq Car Wash production platform — 14,000+ active customers and 16,000+ completed orders, live on the App Store and Google Play.",
+        "أطلقت وأصون منصة الشفق لغسيل السيارات في الإنتاج — أكثر من 14,000 عميل نشط و16,000 طلب مُنجَز، متاحة على App Store وGoogle Play.",
       ),
       VAL_EN_AR(
-        "Own a three-app mobile stack (Client, Worker, Branch) backed by a shared Firebase + REST platform.",
-        "أملك بنية موبايل من ثلاثة تطبيقات (العميل، العامل، الفرع) مدعومة بمنصة مشتركة من Firebase وREST.",
+        "Own a two-app mobile stack (Client and Worker) backed by a shared Firebase + REST platform.",
+        "أملك بنية موبايل من تطبيقين (العميل والعامل) مدعومة بمنصة مشتركة من Firebase وREST.",
       ),
       VAL_EN_AR(
-        "Implemented Stripe payments, FCM-driven order notifications, and a real-time order lifecycle that syncs across all three roles.",
-        "نفّذت مدفوعات Stripe وإشعارات الطلبات عبر FCM ودورة حياة طلب فعليّة تتزامن عبر الأدوار الثلاثة.",
+        "Integrated MyFatoorah payments, FCM-driven order notifications, and a real-time order lifecycle that syncs across customer and worker roles.",
+        "نفّذت مدفوعات ماي فاتورة وإشعارات الطلبات عبر FCM ودورة حياة طلب فعليّة تتزامن بين دوري العميل والعامل.",
       ),
       VAL_EN_AR(
         "Drove Clean Architecture and Bloc adoption so the codebase scales as the product grows.",
@@ -1218,9 +1056,9 @@ export const experiences: Experience[] = [
 ];
 
 export const heroStats: { label: LS; value: string; icon: LucideIcon }[] = [
-  { label: VAL_EN_AR("Active users", "مستخدمون نشطون"), value: "8,000+", icon: Sparkles },
-  { label: VAL_EN_AR("Orders processed", "طلبات مُعالَجة"), value: "3,000+", icon: CreditCard },
-  { label: VAL_EN_AR("Production apps", "تطبيقات إنتاجية"), value: "3", icon: Layers },
+  { label: VAL_EN_AR("Active customers", "عملاء نشطون"), value: "14,000+", icon: Sparkles },
+  { label: VAL_EN_AR("Orders processed", "طلبات مُعالَجة"), value: "16,000+", icon: CreditCard },
+  { label: VAL_EN_AR("Production apps", "تطبيقات إنتاجية"), value: "2", icon: Layers },
 ];
 
 export const featureIcons = {
