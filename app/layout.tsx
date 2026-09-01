@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from "next";
+﻿import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
@@ -25,18 +25,18 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-const SITE_TITLE = "Abdulrhman Alomari — Flutter Engineer";
+const SITE_TITLE = "M. Abdulrahman Alomari — Flutter Engineer";
 const SITE_DESCRIPTION =
-  "Flutter Engineer shipping production mobile apps. Creator of Ashafaq Car Wash, live in Saudi Arabia with 14,000+ active customers and 16,000+ completed orders. Clean Architecture, Bloc, Firebase, MyFatoorah.";
+  "Flutter Engineer shipping production mobile apps. Creator of Ashafaq Car Wash, live in Saudi Arabia with 15,000+ active users and 14,000+ completed operations. Clean Architecture, Bloc, Firebase, MyFatoorah.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: SITE_TITLE,
-    template: "%s · Abdulrhman Alomari",
+    template: "%s · Abdulrahman Alomari",
   },
   description: SITE_DESCRIPTION,
-  applicationName: "Abdulrhman Alomari — Portfolio",
+  applicationName: "Abdulrahman Alomari — Portfolio",
   keywords: [
     "Flutter Developer",
     "Flutter Engineer",
@@ -65,12 +65,12 @@ export const metadata: Metadata = {
     "Smart maintenance app",
     "Wassi food delivery",
     "Doctor appointment app",
-    "Abdulrhman Alomari",
+    "Abdulrahman Alomari",
     "MyFatoorah Flutter integration",
   ],
-  authors: [{ name: "Abdulrhman Alomari", url: SITE_URL }],
-  creator: "Abdulrhman Alomari",
-  publisher: "Abdulrhman Alomari",
+  authors: [{ name: "Abdulrahman Alomari", url: SITE_URL }],
+  creator: "Abdulrahman Alomari",
+  publisher: "Abdulrahman Alomari",
   category: "Technology",
   robots: {
     index: true,
@@ -87,23 +87,23 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: SITE_URL,
-    siteName: "Abdulrhman Alomari",
+    siteName: "Abdulrahman Alomari",
     title: SITE_TITLE,
     description:
-      "Production Flutter apps with 14,000+ customers. Clean Architecture, Bloc, Firebase, MyFatoorah. Live in Saudi Arabia.",
+      "Production Flutter apps with 15,000+ users. Clean Architecture, Bloc, Firebase, MyFatoorah. Live in Saudi Arabia.",
     images: [
       {
         url: "/images/projects/ashafaq/ashafaq_home.jpg",
         width: 1200,
         height: 630,
-        alt: "Ashafaq Car Wash — Abdulrhman Alomari's featured Flutter project",
+        alt: "Ashafaq Car Wash — Abdulrahman Alomari's featured Flutter project",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: SITE_TITLE,
-    description: "Production Flutter apps with 14,000+ customers. Clean Architecture, Bloc, Firebase.",
+    description: "Production Flutter apps with 15,000+ users. Clean Architecture, Bloc, Firebase.",
     creator: "@malomari",
     images: ["/images/projects/ashafaq/ashafaq_home.jpg"],
   },
@@ -118,13 +118,13 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Abdulrhman Alomari",
-  alternateName: "M. Abdulrhman Alomari",
+  name: "Abdulrahman Alomari",
+  alternateName: "M. Abdulrahman Alomari",
   jobTitle: "Flutter Engineer",
   description:
-    "Flutter Engineer building production mobile applications. Creator of Ashafaq Car Wash — 14,000+ active customers in Saudi Arabia.",
+    "Flutter Engineer building production mobile applications. Creator of Ashafaq Car Wash — 15,000+ active users in Saudi Arabia.",
   url: SITE_URL,
-  email: "mailto:abdulrhman.alomari.dev@gmail.com",
+  email: "mailto:mohamed.alomari.dev@gmail.com",
   worksFor: { "@type": "Organization", name: "Al Shafaq Company" },
   knowsAbout: [
     "Flutter",
@@ -138,7 +138,11 @@ const jsonLd = {
     "Mobile Engineering",
     "Mobile Architecture",
   ],
-  sameAs: ["https://github.com/M-Abdulrhman-Alomari"],
+  sameAs: [
+    "https://github.com/MhdAbdAlomari",
+    "https://linkedin.com/in/mhdalomari",
+    "https://mostaql.com/Abdulrhman_Alomari",
+  ],
 };
 
 export default function RootLayout({

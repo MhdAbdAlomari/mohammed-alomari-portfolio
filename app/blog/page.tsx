@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { BackgroundFX } from "@/components/BackgroundFX";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
@@ -15,10 +15,10 @@ export const metadata: Metadata = {
     "Bloc state management",
     "Production Flutter",
     "Flutter engineering notes",
-    "Abdulrhman Alomari",
+    "Abdulrahman Alomari",
   ],
   openGraph: {
-    title: "Writing — Abdulrhman Alomari",
+    title: "Writing — Abdulrahman Alomari",
     description:
       "Notes on Flutter, Clean Architecture, Bloc, and shipping production mobile apps.",
     type: "website",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Writing — Abdulrhman Alomari",
+    title: "Writing — Abdulrahman Alomari",
     description: "Notes from a working Flutter engineer.",
   },
   alternates: { canonical: "/blog" },

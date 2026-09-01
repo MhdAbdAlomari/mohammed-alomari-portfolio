@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BackgroundFX } from "@/components/BackgroundFX";
 import { CaseStudyLayout } from "@/components/CaseStudyLayout";
@@ -29,13 +29,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title,
     description: descriptionEn,
     keywords: project.keywords,
-    authors: [{ name: "Abdulrhman Alomari" }],
+    authors: [{ name: "Abdulrahman Alomari" }],
     openGraph: {
       title,
       description: descriptionEn,
       type: "article",
       url,
-      siteName: "Abdulrhman Alomari",
+      siteName: "Abdulrahman Alomari",
       ...(ogImage && {
         images: [
           {
