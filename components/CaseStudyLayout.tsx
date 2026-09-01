@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowLeft, ArrowUpRight, CheckCircle2, Image as ImageIcon, Layers, Lightbulb, Sparkles } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, CheckCircle2, Image as ImageIcon, Layers, Lightbulb, PlayCircle, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { getProject } from "./data";
 import { Tag } from "./ui/Tag";
@@ -66,6 +66,21 @@ export function CaseStudyLayout({ slug }: { slug: string }) {
                   <Tag key={s}>{s}</Tag>
                 ))}
               </motion.div>
+
+              {project.demoUrl && (
+                <motion.div variants={fadeUp} className="mt-6">
+                  <a
+                    href={project.demoUrl.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-2 text-sm font-medium text-accent transition-colors hover:border-accent/60 hover:bg-accent/15"
+                  >
+                    <PlayCircle size={16} />
+                    {l(project.demoUrl.label, locale)}
+                    <ArrowUpRight size={14} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  </a>
+                </motion.div>
+              )}
             </div>
 
             {project.cover && (

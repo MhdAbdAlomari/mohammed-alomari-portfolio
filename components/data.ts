@@ -58,6 +58,7 @@ export type Project = {
   cover?: Screenshot;
   keywords?: string[];
   caseStudy: CaseStudy;
+  demoUrl?: { href: string; label: LS };
 };
 
 // ────────────────────────────────────────────────────────────────────────
@@ -268,9 +269,13 @@ const projectsRaw: Project[] = [
     title: VAL_EN_AR("ShamFix", "شام فيكس"),
     tagline: VAL_EN_AR("Smart maintenance platform", "منصة صيانة ذكية"),
     description: VAL_EN_AR(
-      "AI-assisted smart home and building maintenance platform that connects customers with vetted technicians. Two Flutter apps (Client and Technician), an eight-stage maintenance workflow, Stripe payments, and a Laravel API backend — built end-to-end. Full scenario walkthrough on YouTube: https://youtu.be/n836lOuQZqg",
-      "منصة صيانة ذكية للمنازل والمباني مدعومة بالذكاء الاصطناعي، تربط العملاء بفنّيين موثوقين. تطبيقا Flutter (العميل والفنّي)، وتدفق صيانة من ثماني مراحل، ومدفوعات عبر Stripe، وخلفية بـ Laravel — مبنيّة كاملةً من الطرف إلى الطرف. سيناريو كامل بين العميل والعامل على YouTube: https://youtu.be/n836lOuQZqg",
+      "AI-assisted smart home and building maintenance platform that connects customers with vetted technicians. Two Flutter apps (Client and Technician), an eight-stage maintenance workflow, Stripe payments, and a Laravel API backend — built end-to-end.",
+      "منصة صيانة ذكية للمنازل والمباني مدعومة بالذكاء الاصطناعي، تربط العملاء بفنّيين موثوقين. تطبيقا Flutter (العميل والفنّي)، وتدفق صيانة من ثماني مراحل، ومدفوعات عبر Stripe، وخلفية بـ Laravel — مبنيّة كاملةً من الطرف إلى الطرف.",
     ),
+    demoUrl: {
+      href: "https://youtu.be/n836lOuQZqg",
+      label: VAL_EN_AR("Watch full scenario on YouTube", "شاهد السيناريو كاملاً على YouTube"),
+    },
     stack: [
       "Flutter",
       "Dart",
@@ -309,8 +314,8 @@ const projectsRaw: Project[] = [
     ],
     caseStudy: {
       overview: VAL_EN_AR(
-        "ShamFix is a smart home and building maintenance platform that pairs customers with vetted technicians and applies AI-assisted fault diagnosis to triage requests before a technician is dispatched. It ships as two Flutter apps (Client and Technician) backed by a Laravel API, Firebase, and Stripe, with an eight-stage maintenance workflow that models the full job lifecycle. A full end-to-end scenario between a customer and a technician is available on YouTube: https://youtu.be/n836lOuQZqg",
-        "شام فيكس منصة صيانة ذكية للمنازل والمباني، تربط العملاء بفنّيين موثوقين وتستخدم تشخيصاً ذكياً للأعطال لفرز الطلبات قبل إرسال الفنّي. تُطلق كتطبيقَي Flutter (العميل والفنّي) مدعومَين بخلفية Laravel وFirebase وStripe، مع تدفق صيانة من ثماني مراحل يُنمذج كامل دورة حياة الطلب. يمكن مشاهدة سيناريو كامل بين العميل والفنّي على YouTube: https://youtu.be/n836lOuQZqg",
+        "ShamFix is a smart home and building maintenance platform that pairs customers with vetted technicians and applies AI-assisted fault diagnosis to triage requests before a technician is dispatched. It ships as two Flutter apps (Client and Technician) backed by a Laravel API, Firebase, and Stripe, with an eight-stage maintenance workflow that models the full job lifecycle.",
+        "شام فيكس منصة صيانة ذكية للمنازل والمباني، تربط العملاء بفنّيين موثوقين وتستخدم تشخيصاً ذكياً للأعطال لفرز الطلبات قبل إرسال الفنّي. تُطلق كتطبيقَي Flutter (العميل والفنّي) مدعومَين بخلفية Laravel وFirebase وStripe، مع تدفق صيانة من ثماني مراحل يُنمذج كامل دورة حياة الطلب.",
       ),
       problem: VAL_EN_AR(
         "Finding a reliable home maintenance technician is fragmented and word-of-mouth. Customers can't compare providers or see ratings; technicians have no structured way to grow a customer base; and triaging a fault correctly the first time is hard, which leads to wasted dispatches and unhappy customers on both sides of the marketplace.",
@@ -391,7 +396,6 @@ const projectsRaw: Project[] = [
         { label: VAL_EN_AR("Workflow stages", "مراحل سير العمل"), value: VAL_EN_AR("8", "8") },
         { label: APPS_SHIPPED, value: VAL_EN_AR("2", "2") },
         { label: VAL_EN_AR("Roles modeled", "أدوار مُنمذَجة"), value: VAL_EN_AR("Customer + Technician", "عميل + فنّي") },
-        { label: VAL_EN_AR("Full scenario", "سيناريو كامل"), value: VAL_EN_AR("YouTube", "YouTube") },
       ],
       lessonsLearned: [
         VAL_EN_AR(
