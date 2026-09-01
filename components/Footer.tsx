@@ -9,9 +9,9 @@ export function Footer() {
       <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row">
         <div className="flex items-center gap-2.5 text-sm text-muted">
           <span className="grid size-7 place-items-center rounded-md bg-gradient-to-br from-accent to-primary text-bg">
-            <span className="font-mono text-xs font-bold">M</span>
+            <span className="font-mono text-xs font-bold">A</span>
           </span>
-          <span>© {new Date().getFullYear()} Mohammed Alomari</span>
+          <span>© {new Date().getFullYear()} Abdulrhman Alomari</span>
         </div>
         <p className="text-center text-xs text-muted-soft sm:text-end">{t.footer.built}</p>
       </div>

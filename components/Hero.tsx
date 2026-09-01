@@ -67,7 +67,7 @@ export function Hero() {
               {t.hero.cta.projects}
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
             </Button>
-            <Button href="/cv.pdf" variant="secondary" download onMouseEnter={() => play("hover")} onClick={() => play("click")}>
+            <Button href="/M_Abdulrahman_Alomari_CV.pdf" variant="secondary" download onMouseEnter={() => play("hover")} onClick={() => play("click")}>
               <Download size={15} />
               {t.hero.cta.cv}
             </Button>

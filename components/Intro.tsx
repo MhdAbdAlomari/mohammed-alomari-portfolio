@@ -55,7 +55,7 @@ export function Intro() {
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               className="grid size-20 place-items-center rounded-2xl bg-gradient-to-br from-accent to-primary shadow-[0_20px_60px_-20px_rgba(92,203,122,0.7)]"
             >
-              <span className="font-mono text-3xl font-bold text-bg">M</span>
+              <span className="font-mono text-3xl font-bold text-bg">A</span>
             </motion.div>
 
             <div className="overflow-hidden">
@@ -65,7 +65,7 @@ export function Intro() {
                 transition={{ delay: 0.4, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
                 className="text-balance text-3xl font-semibold tracking-tight gradient-text sm:text-4xl"
               >
-                Mohammed Alomari
+                Abdulrhman Alomari
               </motion.h1>
             </div>
 
