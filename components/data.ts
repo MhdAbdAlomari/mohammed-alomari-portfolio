@@ -4,6 +4,7 @@ import {
   Wrench,
   UtensilsCrossed,
   Stethoscope,
+  Building2,
   HardHat,
   Database,
   Cloud,
@@ -64,7 +65,7 @@ export type Project = {
 // ────────────────────────────────────────────────────────────────────────
 
 const ASHAFAQ_METRICS_ACTIVE = { en: "Active users", ar: "مستخدمون نشطون" };
-const ASHAFAQ_METRICS_ORDERS = { en: "Completed orders", ar: "طلبات مُنجزة" };
+const ASHAFAQ_METRICS_ORDERS = { en: "Completed operations", ar: "عمليات مُنجزة" };
 const APPS_SHIPPED = { en: "Apps shipped", ar: "تطبيقات مُنجزة" };
 const VAL_EN_AR = (en: string, ar: string): LS => ({ en, ar });
 
@@ -78,8 +79,8 @@ const projectsRaw: Project[] = [
     title: VAL_EN_AR("Ashafaq Car Wash", "تطبيق الشفق لغسيل السيارات"),
     tagline: VAL_EN_AR("Live production · Saudi Arabia", "في الإنتاج · المملكة العربية السعودية"),
     description: VAL_EN_AR(
-      "On-demand car wash platform live on Google Play and the App Store across Saudi Arabia. Two Flutter apps — Client and Worker — backed by a shared real-time platform that powers booking, payments, and field operations for tens of thousands of customers.",
-      "منصة غسيل سيارات حسب الطلب، متاحة على Google Play وApp Store في المملكة العربية السعودية. تطبيقا Flutter — العميل والعامل — مدعومان بمنصة مشتركة في الوقت الفعلي تشغّل الحجز والدفع والعمليات الميدانية لعشرات آلاف العملاء.",
+      "On-demand car wash platform live on Google Play and the App Store across Saudi Arabia. Two Flutter apps — Client and Worker — backed by a shared real-time platform that powers booking, payments, and field operations for 15,000+ active users.",
+      "منصة غسيل سيارات حسب الطلب، متاحة على Google Play وApp Store في المملكة العربية السعودية. تطبيقا Flutter — العميل والعامل — مدعومان بمنصة مشتركة في الوقت الفعلي تشغّل الحجز والدفع والعمليات الميدانية لأكثر من 15,000 مستخدم نشط.",
     ),
     stack: [
       "Flutter",
@@ -96,8 +97,8 @@ const projectsRaw: Project[] = [
       "Hive",
     ],
     metrics: [
-      { label: ASHAFAQ_METRICS_ACTIVE, value: VAL_EN_AR("14,000+", "+14,000") },
-      { label: ASHAFAQ_METRICS_ORDERS, value: VAL_EN_AR("16,000+", "+16,000") },
+      { label: ASHAFAQ_METRICS_ACTIVE, value: VAL_EN_AR("15,000+", "+15,000") },
+      { label: ASHAFAQ_METRICS_ORDERS, value: VAL_EN_AR("14,000+", "+14,000") },
       { label: APPS_SHIPPED, value: VAL_EN_AR("2", "2") },
     ],
     icon: Smartphone,
@@ -121,8 +122,8 @@ const projectsRaw: Project[] = [
     ],
     caseStudy: {
       overview: VAL_EN_AR(
-        "Ashafaq is the on-demand car wash service operated by Al Shafaq Company in Saudi Arabia. I own the mobile stack — two Flutter apps that together serve customers and field workers on a single real-time platform. The product is live on the App Store and Google Play and has processed over 16,000 orders for more than 14,000 active customers.",
-        "الشفق هي خدمة غسيل السيارات حسب الطلب التي تشغّلها شركة الشفق في المملكة العربية السعودية. أنا مسؤول عن البنية الموبايل بالكامل — تطبيقان بـ Flutter يخدمان العملاء والعمال الميدانيين عبر منصة واحدة في الوقت الفعلي. المنتج متاح على App Store وGoogle Play وقد عالج أكثر من 16,000 طلب لأكثر من 14,000 عميل نشط.",
+        "Ashafaq is the on-demand car wash service operated by Al Shafaq Company in Saudi Arabia. I own the mobile stack — two Flutter apps that together serve customers and field workers on a single real-time platform. The product is live on the App Store and Google Play and has completed over 14,000 wash operations for more than 15,000 active users.",
+        "الشفق هي خدمة غسيل السيارات حسب الطلب التي تشغّلها شركة الشفق في المملكة العربية السعودية. أنا مسؤول عن البنية الموبايل بالكامل — تطبيقان بـ Flutter يخدمان العملاء والعمال الميدانيين عبر منصة واحدة في الوقت الفعلي. المنتج متاح على App Store وGoogle Play وقد أنجز أكثر من 14,000 عملية غسيل لأكثر من 15,000 مستخدم نشط.",
       ),
       problem: VAL_EN_AR(
         "Al Shafaq needed to scale a growing manual car wash operation into a digital product across the Saudi market. The previous workflow relied on phone calls and spreadsheets: customers had no way to book online, and workers received jobs by phone with no shared state. The operation could not grow without a platform.",
@@ -193,8 +194,8 @@ const projectsRaw: Project[] = [
         },
       ],
       results: [
-        { label: ASHAFAQ_METRICS_ACTIVE, value: VAL_EN_AR("14,000+", "+14,000") },
-        { label: VAL_EN_AR("Orders processed", "طلبات مُعالَجة"), value: VAL_EN_AR("16,000+", "+16,000") },
+        { label: ASHAFAQ_METRICS_ACTIVE, value: VAL_EN_AR("15,000+", "+15,000") },
+        { label: VAL_EN_AR("Operations completed", "عمليات مُنجزة"), value: VAL_EN_AR("14,000+", "+14,000") },
         { label: VAL_EN_AR("Production apps", "تطبيقات إنتاجية"), value: VAL_EN_AR("2", "2") },
         { label: VAL_EN_AR("Crash-free sessions", "جلسات بلا أعطال"), value: VAL_EN_AR("99.6%", "%99.6") },
       ],
@@ -461,8 +462,8 @@ const projectsRaw: Project[] = [
     title: VAL_EN_AR("Ashafaq Worker App", "تطبيق عامل الشفق"),
     tagline: VAL_EN_AR("Internal production app · Saudi Arabia", "تطبيق إنتاجي داخلي · المملكة العربية السعودية"),
     description: VAL_EN_AR(
-      "Worker-side companion app for the Ashafaq Car Wash platform. Built for field workers across Saudi Arabia to claim and complete jobs through an explicit four-stage order workflow (Accepted → Arrived → In Progress → Completed). Multi-language UI in Arabic, English, Hindi, and Bengali to match the on-the-ground workforce. Always online — every state change syncs live via Firestore and FCM.",
-      "تطبيق العامل المرافق لمنصة الشفق لغسيل السيارات. مبنيّ للعمال الميدانيين في المملكة العربية السعودية لاستلام الطلبات وإكمالها عبر تدفّق صريح من أربع مراحل (مقبول ← وصل ← قيد التنفيذ ← مُكتمل). واجهة متعدّدة اللغات بالعربية والإنجليزية والهندية والبنغالية لتناسب فريق العمل في الميدان. متصل دائماً — كل تغيير حالة يُزامَن حيّاً عبر Firestore وFCM.",
+      "Worker-side companion app for the Ashafaq Car Wash platform. Built for field workers across Saudi Arabia to claim and complete jobs through an explicit five-stage order workflow (Pending → Accepted → Arrived → In Progress → Completed). Multi-language UI in Arabic, English, Hindi, and Bengali to match the on-the-ground workforce. Always online — every state change syncs live via Firestore and FCM.",
+      "تطبيق العامل المرافق لمنصة الشفق لغسيل السيارات. مبنيّ للعمال الميدانيين في المملكة العربية السعودية لاستلام الطلبات وإكمالها عبر تدفّق صريح من خمس مراحل (قيد الانتظار ← مقبول ← وصل ← قيد التنفيذ ← مُكتمل). واجهة متعدّدة اللغات بالعربية والإنجليزية والهندية والبنغالية لتناسب فريق العمل في الميدان. متصل دائماً — كل تغيير حالة يُزامَن حيّاً عبر Firestore وFCM.",
     ),
     stack: [
       "Flutter",
@@ -478,7 +479,7 @@ const projectsRaw: Project[] = [
       "i18n (AR / EN / HI / BN)",
     ],
     metrics: [
-      { label: VAL_EN_AR("Order stages", "مراحل الطلب"), value: VAL_EN_AR("4", "4") },
+      { label: VAL_EN_AR("Order stages", "مراحل الطلب"), value: VAL_EN_AR("5", "5") },
       { label: VAL_EN_AR("Languages", "اللغات"), value: VAL_EN_AR("AR · EN · HI · BN", "العربية · الإنجليزية · الهندية · البنغالية") },
       { label: VAL_EN_AR("Status", "الحالة"), value: VAL_EN_AR("In production", "في الإنتاج") },
     ],
@@ -496,23 +497,23 @@ const projectsRaw: Project[] = [
     ],
     caseStudy: {
       overview: VAL_EN_AR(
-        "The Ashafaq Worker app is the field-side of the Ashafaq Car Wash platform. It's the tool every car wash worker uses to receive, work, and complete jobs — a focused production app deployed across the Saudi market alongside the Client and Branch apps. The UI ships in Arabic, English, Hindi, and Bengali to match the actual workforce, and the order lifecycle is modeled as four explicit stages: Accepted → Arrived → In Progress → Completed.",
-        "تطبيق عامل الشفق هو الواجهة الميدانية لمنصة الشفق لغسيل السيارات. إنه الأداة التي يستخدمها كل عامل غسيل لاستلام العمل وتنفيذه وإكماله — تطبيق إنتاجي مُركَّز مُطلَق في السوق السعودي إلى جانب تطبيقَي العميل والفرع. تأتي الواجهة بالعربية والإنجليزية والهندية والبنغالية لتناسب فريق العمل الفعلي، ودورة حياة الطلب مُنمذَجة بأربع مراحل صريحة: مقبول ← وصل ← قيد التنفيذ ← مُكتمل.",
+        "The Ashafaq Worker app is the field-side of the Ashafaq Car Wash platform. It's the tool every car wash worker uses to receive, work, and complete jobs — a focused production app deployed across the Saudi market alongside the Client and Branch apps. The UI ships in Arabic, English, Hindi, and Bengali to match the actual workforce, and the order lifecycle is modeled as five explicit stages: Pending → Accepted → Arrived → In Progress → Completed.",
+        "تطبيق عامل الشفق هو الواجهة الميدانية لمنصة الشفق لغسيل السيارات. إنه الأداة التي يستخدمها كل عامل غسيل لاستلام العمل وتنفيذه وإكماله — تطبيق إنتاجي مُركَّز مُطلَق في السوق السعودي إلى جانب تطبيقَي العميل والفرع. تأتي الواجهة بالعربية والإنجليزية والهندية والبنغالية لتناسب فريق العمل الفعلي، ودورة حياة الطلب مُنمذَجة بخمس مراحل صريحة: قيد الانتظار ← مقبول ← وصل ← قيد التنفيذ ← مُكتمل.",
       ),
       problem: VAL_EN_AR(
         "Field workers in the Saudi car wash industry come from a multilingual workforce — Arabic, English, Hindi, and Bengali speakers all working side by side. They need a tool that they can read in their own language, that surfaces the right job at the right time, and that handles state transitions correctly even when network connectivity in a parking lot is unreliable. A generic English-only app doesn't ship.",
         "يأتي العمال الميدانيون في قطاع غسيل السيارات السعودي من قوى عاملة متعدّدة اللغات — متحدّثو العربية والإنجليزية والهندية والبنغالية يعملون جنباً إلى جنب. يحتاجون إلى أداة يمكنهم قراءتها بلغتهم، تُظهر الطلب الصحيح في الوقت الصحيح، وتُعالج تحوّلات الحالة بشكل صحيح حتى عندما يكون اتصال الشبكة في موقف السيارات غير موثوق. تطبيق إنجليزي فقط لا يُمكن إطلاقه.",
       ),
       solution: VAL_EN_AR(
-        "A focused Flutter app with full i18n in four languages and an explicit four-stage state machine for orders. FCM push delivers a deep link directly to the assigned job; the worker confirms arrival, marks in-progress, and completes — each transition broadcast over Firestore to the Client app in real time. The app is designed for always-connected use in the field, where a live connection is required to stay in sync with the dispatch pipeline.",
-        "تطبيق Flutter مُركَّز بدعم i18n كامل بأربع لغات وآلة حالة صريحة من أربع مراحل للطلبات. يُسلِّم FCM رابطاً عميقاً مباشرة إلى الطلب المُسنَد؛ يؤكّد العامل وصوله، ثم يُحدّد البدء، ثم الإكمال — وكل تحوّل يُبَثّ عبر Firestore إلى تطبيق العميل في الوقت الفعلي. التطبيق مُصمَّم للاستخدام مع اتصال دائم في الميدان، إذ يتطلّب اتصالاً حيّاً للبقاء متزامناً مع خطّ الإسناد.",
+        "A focused Flutter app with full i18n in four languages and an explicit five-stage state machine for orders. FCM push delivers a deep link directly to the assigned job; the worker accepts it, confirms arrival, marks in-progress, and completes — each transition broadcast over Firestore to the Client app in real time. The app is designed for always-connected use in the field, where a live connection is required to stay in sync with the dispatch pipeline.",
+        "تطبيق Flutter مُركَّز بدعم i18n كامل بأربع لغات وآلة حالة صريحة من خمس مراحل للطلبات. يُسلِّم FCM رابطاً عميقاً مباشرة إلى الطلب المُسنَد؛ يقبله العامل، ثم يؤكّد وصوله، ثم يُحدّد البدء، ثم الإكمال — وكل تحوّل يُبَثّ عبر Firestore إلى تطبيق العميل في الوقت الفعلي. التطبيق مُصمَّم للاستخدام مع اتصال دائم في الميدان، إذ يتطلّب اتصالاً حيّاً للبقاء متزامناً مع خطّ الإسناد.",
       ),
       keyFeatures: [
         {
-          title: VAL_EN_AR("Four-stage order workflow", "تدفّق الطلب من أربع مراحل"),
+          title: VAL_EN_AR("Five-stage order workflow", "تدفّق الطلب من خمس مراحل"),
           body: VAL_EN_AR(
-            "Explicit Accepted → Arrived → In Progress → Completed states with their own UI and validation. No implicit transitions, no booleans pretending to be states.",
-            "حالات صريحة: مقبول ← وصل ← قيد التنفيذ ← مُكتمل، لكل منها واجهة وتحقّق خاصّ. لا تحوّلات ضمنيّة ولا قِيَم منطقية تتظاهر بالحالات.",
+            "Explicit Pending → Accepted → Arrived → In Progress → Completed states with their own UI and validation. No implicit transitions, no booleans pretending to be states.",
+            "حالات صريحة: قيد الانتظار ← مقبول ← وصل ← قيد التنفيذ ← مُكتمل، لكل منها واجهة وتحقّق خاصّ. لا تحوّلات ضمنيّة ولا قِيَم منطقية تتظاهر بالحالات.",
           ),
         },
         {
@@ -582,7 +583,7 @@ const projectsRaw: Project[] = [
         },
       ],
       results: [
-        { label: VAL_EN_AR("Order stages", "مراحل الطلب"), value: VAL_EN_AR("4", "4") },
+        { label: VAL_EN_AR("Order stages", "مراحل الطلب"), value: VAL_EN_AR("5", "5") },
         { label: VAL_EN_AR("Languages", "اللغات"), value: VAL_EN_AR("4", "4") },
         { label: VAL_EN_AR("Status", "الحالة"), value: VAL_EN_AR("In production", "في الإنتاج") },
         { label: VAL_EN_AR("Sync", "المزامنة"), value: VAL_EN_AR("Real-time", "في الوقت الفعلي") },
@@ -599,6 +600,131 @@ const projectsRaw: Project[] = [
         VAL_EN_AR(
           "FCM deep links into the assigned job are the single highest-leverage UX choice for a field app — every saved tap compounds across hundreds of orders per day.",
           "روابط FCM العميقة إلى الطلب المُسنَد هي أكثر قرار تجربة استخدام تأثيراً في تطبيق ميداني — كل ضغطة يتم توفيرها تتراكم عبر مئات الطلبات يومياً.",
+        ),
+      ],
+      screenshots: [],
+    },
+  },
+
+  // ────────────────────────────────────────────────────────────────────────
+  // 4. ASHAFAQ BRANCH — internal branch-management app
+  // ────────────────────────────────────────────────────────────────────────
+  {
+    slug: "ashafaq-branch",
+    title: VAL_EN_AR("Ashafaq Branch App", "تطبيق فرع الشفق"),
+    tagline: VAL_EN_AR("Internal branch operations · 11 branches in Riyadh", "عمليات الفروع الداخلية · 11 فرعاً في الرياض"),
+    description: VAL_EN_AR(
+      "Al Shafaq operates 11 physical branches across Riyadh and needed a dedicated app to coordinate incoming wash requests across all of them. I designed and built the branch-side Flutter app so branch managers can receive, review, and dispatch customer requests seamlessly across every location.",
+      "تُدير شركة الشفق 11 فرعاً في الرياض واحتاجت إلى تطبيق مخصّص لتنسيق طلبات الغسيل الواردة عبر كل الفروع. صمّمت وبنيت تطبيق Flutter لجانب الفرع بحيث يستطيع مديرو الفروع استلام طلبات العملاء ومراجعتها وإسنادها بسلاسة عبر كل موقع.",
+    ),
+    stack: [
+      "Flutter",
+      "Dart",
+      "Bloc",
+      "Clean Architecture",
+      "Firebase",
+      "Firestore",
+      "REST APIs",
+      "FCM",
+      "GoRouter",
+      "GetIt",
+    ],
+    metrics: [
+      { label: VAL_EN_AR("Live branches", "فروع نشطة"), value: VAL_EN_AR("11", "11") },
+      { label: VAL_EN_AR("Region", "المنطقة"), value: VAL_EN_AR("Riyadh", "الرياض") },
+      { label: VAL_EN_AR("Assignment", "الإسناد"), value: VAL_EN_AR("1-tap", "بضغطة واحدة") },
+    ],
+    icon: Building2,
+    accent: "from-accent/15 to-transparent",
+    year: VAL_EN_AR("Jan 2026 — Mar 2026", "كانون الثاني 2026 — آذار 2026"),
+    role: VAL_EN_AR("Flutter Engineer · Branch app owner", "مهندس Flutter · مسؤول تطبيق الفرع"),
+    keywords: [
+      "Flutter operations app",
+      "Branch management Flutter",
+      "Multi-branch Flutter app",
+      "Ashafaq Branch",
+      "Riyadh car wash operations",
+    ],
+    caseStudy: {
+      overview: VAL_EN_AR(
+        "The Ashafaq Branch app is the internal tool the company uses to run its 11 branches in Riyadh on the same platform as the Client and Worker apps. Branch managers use it every day to receive incoming wash requests, review them, and assign the right worker to the right job — without leaving the app.",
+        "تطبيق فرع الشفق هو الأداة الداخلية التي تستخدمها الشركة لإدارة 11 فرعاً في الرياض على المنصة نفسها التي يعمل عليها تطبيقا العميل والعامل. يستخدمه مديرو الفروع يومياً لاستلام طلبات الغسيل الواردة ومراجعتها وإسناد العامل المناسب للطلب المناسب — دون مغادرة التطبيق.",
+      ),
+      problem: VAL_EN_AR(
+        "With 11 branches operating at the same time, the company needed a way to organize incoming customer wash requests per branch, keep managers in sync with the field, and eliminate the friction of coordinating jobs over phone calls and spreadsheets. Requests were arriving from the Client app faster than any manual workflow could keep up with.",
+        "مع تشغيل 11 فرعاً في الوقت نفسه، احتاجت الشركة إلى طريقة لتنظيم طلبات الغسيل الواردة من العملاء لكل فرع، وإبقاء المديرين متزامنين مع الميدان، وإزالة احتكاك تنسيق الطلبات عبر المكالمات وجداول البيانات. كانت الطلبات تصل من تطبيق العميل بوتيرة أسرع من أي سير عمل يدوي.",
+      ),
+      solution: VAL_EN_AR(
+        "I built a dedicated branch-side Flutter app that plugs into the Ashafaq platform. Each branch sees only its own queue of incoming requests, managers process them in one tap, and the assignment fires straight through Firestore and FCM to the assigned worker in real time — so the request the customer just placed becomes an active job on the ground within seconds.",
+        "بنيت تطبيق Flutter مخصّصاً لجانب الفرع يتّصل بمنصة الشفق. يرى كل فرع طابور طلباته الواردة فقط، ويعالجها المديرون بضغطة واحدة، ويُرسَل الإسناد مباشرة عبر Firestore وFCM إلى العامل المُسنَد في الوقت الفعلي — بحيث يصبح الطلب الذي قدّمه العميل للتّو عملاً نشطاً في الميدان خلال ثوانٍ.",
+      ),
+      keyFeatures: [
+        {
+          title: VAL_EN_AR("Branch operations dashboard", "لوحة عمليات الفرع"),
+          body: VAL_EN_AR(
+            "Single screen per branch showing incoming wash requests and their status — the manager's home base for the whole day.",
+            "شاشة واحدة لكل فرع تعرض طلبات الغسيل الواردة وحالتها — قاعدة المدير الرئيسية لليوم كاملاً.",
+          ),
+        },
+        {
+          title: VAL_EN_AR("Live request handling", "استلام الطلبات فورياً"),
+          body: VAL_EN_AR(
+            "New customer requests appear in real time via Firestore — no manual refresh, no missed jobs.",
+            "تظهر طلبات العملاء الجديدة فورياً عبر Firestore — دون تحديث يدوي ودون طلبات ضائعة.",
+          ),
+        },
+        {
+          title: VAL_EN_AR("One-tap worker assignment", "إسناد العامل بضغطة واحدة"),
+          body: VAL_EN_AR(
+            "Manager assigns a worker to a request; the change broadcasts to the Client and Worker apps in one round-trip — no double-dispatch.",
+            "يُسنِد المدير عاملاً للطلب؛ ويُبَثّ التغيير إلى تطبيقَي العميل والعامل في رحلة واحدة — دون ازدواج إسناد.",
+          ),
+        },
+        {
+          title: VAL_EN_AR("Multi-branch support", "دعم تعدّد الفروع"),
+          body: VAL_EN_AR(
+            "Scales across 11 branches today; adding a 12th branch is a configuration change, not a redeploy.",
+            "يتوسّع عبر 11 فرعاً حالياً؛ وإضافة فرع ثاني عشر تغييرُ إعدادات لا إعادةَ نشر.",
+          ),
+        },
+      ],
+      architecture: [
+        {
+          title: VAL_EN_AR("Realtime ops via Firestore", "عمليات حيّة عبر Firestore"),
+          body: VAL_EN_AR(
+            "Queue and request state flow through Firestore listeners scoped per branch, so each branch only pays for its own reads.",
+            "يتدفّق الطابور وحالة الطلب عبر مستمعي Firestore محصورين لكل فرع، بحيث يدفع كل فرع تكلفة قراءاته فقط.",
+          ),
+        },
+        {
+          title: VAL_EN_AR("Shared domain with the Ashafaq platform", "نطاق مشترك مع منصة الشفق"),
+          body: VAL_EN_AR(
+            "The Branch app reuses the same domain layer as the Client and Worker apps. Business rules stay aligned automatically.",
+            "يُعيد تطبيق الفرع استخدام طبقة domain نفسها التي يستخدمها تطبيقا العميل والعامل. تبقى قواعد العمل متوافقة تلقائياً.",
+          ),
+        },
+        {
+          title: VAL_EN_AR("Branch-scoped data model", "نموذج بيانات مَحصور بالفرع"),
+          body: VAL_EN_AR(
+            "All queries and listeners are scoped by branch ID, so adding a branch doesn't grow query cost for the existing ones.",
+            "كل الاستعلامات والمستمعين محصورون بمعرّف الفرع، لذا فإن إضافة فرع لا تزيد تكلفة الاستعلام للفروع القائمة.",
+          ),
+        },
+      ],
+      results: [
+        { label: VAL_EN_AR("Live branches", "فروع نشطة"), value: VAL_EN_AR("11", "11") },
+        { label: VAL_EN_AR("Region", "المنطقة"), value: VAL_EN_AR("Riyadh", "الرياض") },
+        { label: VAL_EN_AR("Assignment", "الإسناد"), value: VAL_EN_AR("1-tap", "بضغطة واحدة") },
+        { label: VAL_EN_AR("Status", "الحالة"), value: VAL_EN_AR("In production", "في الإنتاج") },
+      ],
+      lessonsLearned: [
+        VAL_EN_AR(
+          "Scoping every read by branch ID from day one made adding the 11th branch a non-event. Multi-tenancy is much cheaper to design in than to retrofit.",
+          "حصرُ كل قراءة بمعرّف الفرع منذ اليوم الأول جعل إضافة الفرع الحادي عشر حدثاً غير مُلاحَظ. تعدّد المستأجرين أرخص بكثير عند تصميمه من البداية لا عند إضافته لاحقاً.",
+        ),
+        VAL_EN_AR(
+          "Operational tools should feel like one screen, not a tree of nested pages. A manager should never tap five times to assign a worker — they tap once.",
+          "أدوات العمليات يجب أن تُشعِر بأنها شاشة واحدة، لا شجرة من الصفحات المتداخلة. يجب ألّا يضغط المدير خمس مرّات لإسناد عامل — بل ضغطة واحدة.",
         ),
       ],
       screenshots: [],
@@ -958,6 +1084,7 @@ export const PROJECT_ORDER: readonly string[] = [
   "shamfix",
   "food-delivery",
   "ashafaq-worker",
+  "ashafaq-branch",
   "doctor-appointment",
 ];
 
@@ -1036,8 +1163,8 @@ export const experiences: Experience[] = [
     location: VAL_EN_AR("Saudi Arabia · Remote", "المملكة العربية السعودية · عن بُعد"),
     highlights: [
       VAL_EN_AR(
-        "Shipped and maintain the Ashafaq Car Wash production platform — 14,000+ active customers and 16,000+ completed orders, live on the App Store and Google Play.",
-        "أطلقت وأصون منصة الشفق لغسيل السيارات في الإنتاج — أكثر من 14,000 عميل نشط و16,000 طلب مُنجَز، متاحة على App Store وGoogle Play.",
+        "Shipped and maintain the Ashafaq Car Wash production platform — 15,000+ active users and 14,000+ completed wash operations, live on the App Store and Google Play.",
+        "أطلقت وأصون منصة الشفق لغسيل السيارات في الإنتاج — أكثر من 15,000 مستخدم نشط و14,000 عملية غسيل مُنجزة، متاحة على App Store وGoogle Play.",
       ),
       VAL_EN_AR(
         "Own a two-app mobile stack (Client and Worker) backed by a shared Firebase + REST platform.",
@@ -1056,8 +1183,8 @@ export const experiences: Experience[] = [
 ];
 
 export const heroStats: { label: LS; value: string; icon: LucideIcon }[] = [
-  { label: VAL_EN_AR("Active customers", "عملاء نشطون"), value: "14,000+", icon: Sparkles },
-  { label: VAL_EN_AR("Orders processed", "طلبات مُعالَجة"), value: "16,000+", icon: CreditCard },
+  { label: VAL_EN_AR("Active users", "مستخدمون نشطون"), value: "15,000+", icon: Sparkles },
+  { label: VAL_EN_AR("Operations completed", "عمليات مُنجزة"), value: "14,000+", icon: CreditCard },
   { label: VAL_EN_AR("Production apps", "تطبيقات إنتاجية"), value: "2", icon: Layers },
 ];
 
