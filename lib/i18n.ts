@@ -1,4 +1,4 @@
-export const locales = ["en", "ar"] as const;
+﻿export const locales = ["en", "ar"] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "en";
 
@@ -68,7 +68,7 @@ const en: Dict = {
   nav: { about: "About", experience: "Experience", projects: "Projects", skills: "Skills", writing: "Writing", contact: "Contact", cta: "Let's talk" },
   hero: {
     badge: "Available for new opportunities",
-    nameLine1: "Abdulrhman",
+    nameLine1: "Abdulrahman",
     nameLine2: "Alomari.",
     subtitle: {
       lead: "Flutter Engineer crafting production mobile apps with",
@@ -76,17 +76,17 @@ const en: Dict = {
       bloc: "Bloc",
       and: "and",
       product: "Ashafaq Car Wash",
-      tail: "— a live product serving 14,000+ customers across Saudi Arabia.",
+      tail: "— a live product serving 15,000+ users across Saudi Arabia.",
     },
     location: "Open to remote work or visa relocation",
     yearsTag: "Production Flutter apps serving thousands of customers in Saudi Arabia",
     cta: { projects: "View Projects", cv: "Download CV", contact: "Contact Me" },
-    stats: { users: "Active customers", orders: "Orders processed", apps: "Production apps" },
+    stats: { users: "Active users", orders: "Completed operations", apps: "Production apps" },
   },
   about: {
     eyebrow: "About",
     title: "Engineer behind a product, not just code.",
-    subtitle: "I'm Abdulrhman — a Flutter engineer focused on shipping real apps that real people use. I built and continue to maintain the Ashafaq Car Wash platform, deployed to the Saudi market and serving 14,000+ customers with 16,000+ orders processed.",
+    subtitle: "I'm Abdulrahman — a Flutter engineer focused on shipping real apps that real people use. I built and continue to maintain the Ashafaq Car Wash platform, deployed to the Saudi market and serving 15,000+ active users with 14,000+ completed operations.",
     pillars: {
       clean: { t: "Clean Architecture", b: "Separation of concerns from day one — domain, data, and presentation layers that scale with the product." },
       bloc: { t: "Bloc state management", b: "Predictable state, testable flows, and clear boundaries between business logic and UI." },
@@ -139,17 +139,17 @@ const ar: Dict = {
       bloc: "Bloc",
       and: "و",
       product: "تطبيق الشفق لغسيل السيارات",
-      tail: "— منتج حيّ يخدم أكثر من 14,000 عميل في المملكة العربية السعودية.",
+      tail: "— منتج حيّ يخدم أكثر من 15,000 مستخدم في المملكة العربية السعودية.",
     },
     location: "متاح للعمل عن بُعد أو الانتقال بفيزا عمل",
     yearsTag: "خبرة في تطوير تطبيقات إنتاجية تخدم آلاف العملاء في السعودية",
     cta: { projects: "عرض المشاريع", cv: "تحميل السيرة الذاتية", contact: "تواصل معي" },
-    stats: { users: "عملاء نشطون", orders: "طلبات مُنجزة", apps: "تطبيقات في الإنتاج" },
+    stats: { users: "مستخدمون نشطون", orders: "عمليات مُنجزة", apps: "تطبيقات في الإنتاج" },
   },
   about: {
     eyebrow: "نبذة",
     title: "مهندس وراء منتج، لا مجرد كود.",
-    subtitle: "أنا عبد الرحمن — مهندس Flutter أركّز على بناء تطبيقات حقيقية يستخدمها أشخاص حقيقيون. بنيت وأواصل صيانة منصة الشفق لغسيل السيارات، المُطلقة في السوق السعودي بأكثر من 14,000 عميل و16,000 طلب مُعالَج.",
+    subtitle: "أنا عبد الرحمن — مهندس Flutter أركّز على بناء تطبيقات حقيقية يستخدمها أشخاص حقيقيون. بنيت وأواصل صيانة منصة الشفق لغسيل السيارات، المُطلقة في السوق السعودي بأكثر من 15,000 مستخدم نشط و14,000 عملية مُنجزة.",
     pillars: {
       clean: { t: "بنية نظيفة", b: "فصل واضح للمسؤوليات من اليوم الأول — طبقات الـ domain والـ data والعرض تكبر مع المنتج." },
       bloc: { t: "إدارة الحالة عبر Bloc", b: "حالة متوقّعة، تدفقات قابلة للاختبار، وحدود واضحة بين منطق الأعمال وواجهة المستخدم." },
