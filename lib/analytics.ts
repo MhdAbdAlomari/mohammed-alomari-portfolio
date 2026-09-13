@@ -42,7 +42,7 @@ export async function getSiteStats(): Promise<SiteStats> {
       { slug: "ashafaq-car-wash", title: "Ashafaq Car Wash", views: Math.round(pageViews * 0.21) },
       { slug: "shamfix", title: "ShamFix", views: Math.round(pageViews * 0.07) },
       { slug: "food-delivery", title: "Food Delivery App", views: Math.round(pageViews * 0.04) },
-      { slug: "doctor-appointment", title: "Doctor Appointment App", views: Math.round(pageViews * 0.03) },
+      { slug: "shifa-or-scheduling", title: "Shifa OR Scheduling", views: Math.round(pageViews * 0.03) },
     ],
     daily,
     range: { from: daily[0].date, to: daily[daily.length - 1].date },

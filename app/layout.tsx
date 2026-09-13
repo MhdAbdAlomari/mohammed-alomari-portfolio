@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     "ShamFix",
     "Smart maintenance app",
     "Wassi food delivery",
-    "Doctor appointment app",
+    "Shifa operating room scheduling app",
     "Abdulrahman Alomari",
     "MyFatoorah Flutter integration",
   ],
